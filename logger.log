@@ -1,0 +1,26 @@
+March 16th 2020, 12:07:13 pm '[INFO]': ::1 - - [16/Mar/2020:05:07:21 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
+ 
+
+March 16th 2020, 12:07:13 pm '[INFO]': ::1 - - [16/Mar/2020:05:07:22 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36"
+ 
+
+March 16th 2020, 12:08:38 pm '[INFO]': GET / 304 
+ 
+
+March 16th 2020, 12:08:38 pm '[INFO]': GET /aaaaaa 404 
+ 
+
+March 16th 2020, 12:09:54 pm '[INFO]': GET /aaaaaa 404 
+
+March 16th 2020, 12:09:54 pm '[INFO]': GET /aaaaaa 404 
+
+March 16th 2020, 12:13:01 pm '[INFO]': aaaaaaaaa
+March 16th 2020, 12:14:05 pm '[INFO]': GET /aaaaaa 404 
+
+March 16th 2020, 12:14:05 pm '[INFO]': GET / 304 
+
+March 16th 2020, 12:15:26 pm '[INFO]': aaaaaaa
+March 16th 2020, 12:16:28 pm '[INFO]': aaaaaaa
+March 16th 2020, 12:16:47 pm '[INFO]': aaaaaaa
+March 16th 2020, 12:18:52 pm '[INFO]': GET / 304 
+
