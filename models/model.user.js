@@ -1,11 +1,11 @@
 module.exports = (sequelize , Sequelize)=>{
     let User = sequelize.define('User' , {
-        // id : {
-        //     type : Sequelize.INTEGER,
-        //     primaryKey : true,
-        //     autoIncrement : true,
-        //     field : 'id'
-        // },
+        id : {
+            type : Sequelize.INTEGER,
+            primaryKey : true,
+            autoIncrement : true,
+            field : 'id'
+        },
         username : {
             type : Sequelize.STRING(45),
             allowNull : true,
@@ -31,6 +31,7 @@ module.exports = (sequelize , Sequelize)=>{
         }
     },{
         tableName : 'User',
+        freezeTableName : true,
         timestamps : false
     });
     return User;

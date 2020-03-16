@@ -1,6 +1,6 @@
 let Sequelize = require('sequelize');
 let config = require('../config');
-
+let logger = require('../logger/logger');
 let sequelize = new Sequelize(config.database , config.username , config.password , {
     host : config.host,
     post : config.post,
@@ -18,7 +18,7 @@ sequelize.authenticate()
         console.log('Connection has been established successfully.');
     })
     .catch(err => {
-        console.error('Unable to connect to the database:', err);
+        logger.error('Unable to connect to the database:', err);
     });
 
 
