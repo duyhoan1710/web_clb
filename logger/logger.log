@@ -139,3 +139,764 @@ March 16th 2020, 2:45:30 pm '[INFO]': () =>{
     })
 }
 March 16th 2020, 2:45:30 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:09:36 pm '[INFO]': () =>{
+    return db.sequelize.define('Users' , {
+        id : {
+            type : db.Sequelize.INTEGER,
+            primaryKey : true,
+            autoIncrement : true,
+            field : 'id'
+        },
+        username : {
+            type : db.Sequelize.STRING(45),
+            allowNull : true,
+            unique : true,
+            field  : "username"
+        },
+        password : {
+            type : db.Sequelize.STRING(45),
+            allowNull : true,
+            field : "password"
+        },
+        email : {
+            type : db.Sequelize.STRING(50),
+            unique : true,
+            allowNull : true,
+            field : "email",
+        },
+        phone : {
+            type : db.Sequelize.INTEGER,
+            allowNull : true,
+            unique : true,
+            field : "phone"
+        }
+    },{
+        tableName : "Users",
+        timestamps : false
+    })
+}
+March 16th 2020, 3:09:36 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:09:58 pm '[INFO]': () =>{
+    return db.sequelize.define('Users' , {
+        id : {
+            type : db.Sequelize.INTEGER,
+            primaryKey : true,
+            autoIncrement : true,
+            field : 'id'
+        },
+        username : {
+            type : db.Sequelize.STRING(45),
+            allowNull : true,
+            unique : true,
+            field  : "username"
+        },
+        password : {
+            type : db.Sequelize.STRING(45),
+            allowNull : true,
+            field : "password"
+        },
+        email : {
+            type : db.Sequelize.STRING(50),
+            unique : true,
+            allowNull : true,
+            field : "email",
+        },
+        phone : {
+            type : db.Sequelize.INTEGER,
+            allowNull : true,
+            unique : true,
+            field : "phone"
+        }
+    },{
+        tableName : "Users",
+        timestamps : false
+    })
+}
+March 16th 2020, 3:09:58 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:09:58 pm '[INFO]': GET / 304 
+
+March 16th 2020, 3:09:58 pm '[INFO]': GET /favicon.ico 404 
+
+March 16th 2020, 3:11:32 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:12:05 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:12:05 pm '[INFO]': () =>{
+    return db.sequelize.define('Users' , {
+        id : {
+            type : db.Sequelize.INTEGER,
+            primaryKey : true,
+            autoIncrement : true,
+            field : 'id'
+        },
+        username : {
+            type : db.Sequelize.STRING(45),
+            allowNull : true,
+            unique : true,
+            field  : "username"
+        },
+        password : {
+            type : db.Sequelize.STRING(45),
+            allowNull : true,
+            field : "password"
+        },
+        email : {
+            type : db.Sequelize.STRING(50),
+            unique : true,
+            allowNull : true,
+            field : "email",
+        },
+        phone : {
+            type : db.Sequelize.INTEGER,
+            allowNull : true,
+            unique : true,
+            field : "phone"
+        }
+    },{
+        tableName : "Users",
+        timestamps : false
+    })
+}
+March 16th 2020, 3:12:05 pm '[INFO]': GET / 304 
+
+March 16th 2020, 3:12:18 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:22:46 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:27:40 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:27:40 pm '[ERROR]': uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1228:14)
+    at listenInCluster (net.js:1276:12)
+    at Server.listen (net.js:1364:7)
+    at Function.listen (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:11:5)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:28:01 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:28:30 pm '[INFO]': server is running in port 3000
+March 16th 2020, 3:28:30 pm '[INFO]': () =>{
+    let User = sequelize.define('Users' , {
+        id : {
+            type : Sequelize.INTEGER,
+            primaryKey : true,
+            autoIncrement : true,
+            field : 'id'
+        },
+        username : {
+            type : Sequelize.STRING(45),
+            allowNull : true,
+            unique : true,
+            field  : "username"
+        },
+        password : {
+            type : Sequelize.STRING(45),
+            allowNull : true,
+            field : "password"
+        },
+        email : {
+            type : Sequelize.STRING(50),
+            unique : true,
+            allowNull : true,
+            field : "email",
+        },
+        phone : {
+            type : Sequelize.INTEGER,
+            allowNull : true,
+            unique : true,
+            field : "phone"
+        }
+    },{
+        tableName : "Users",
+        timestamps : false
+    });
+
+    return User;
+}
+March 16th 2020, 3:28:30 pm '[INFO]': GET / 304 
+
+March 16th 2020, 3:35:00 pm '[ERROR]': uncaughtException: require(...) is not a function
+TypeError: require(...) is not a function
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:35:21 pm '[ERROR]': uncaughtException: Class constructor model cannot be invoked without 'new'
+TypeError: Class constructor model cannot be invoked without 'new'
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:36:01 pm '[ERROR]': uncaughtException: Class constructor model cannot be invoked without 'new'
+TypeError: Class constructor model cannot be invoked without 'new'
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:39:03 pm '[ERROR]': uncaughtException: Class constructor model cannot be invoked without 'new'
+TypeError: Class constructor model cannot be invoked without 'new'
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:43:39 pm '[ERROR]': uncaughtException: sequelize is not defined
+ReferenceError: sequelize is not defined
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:2:12)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+March 16th 2020, 3:44:23 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:48:08 pm '[ERROR]': uncaughtException: Cannot find module '../models/user'
+Require stack:
+- C:\Users\Dell\WebstormProjects\web_clb\db\index.js
+- C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js
+- C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js
+- C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js
+- C:\Users\Dell\WebstormProjects\web_clb\app.js
+Error: Cannot find module '../models/user'
+Require stack:
+- C:\Users\Dell\WebstormProjects\web_clb\db\index.js
+- C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js
+- C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js
+- C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js
+- C:\Users\Dell\WebstormProjects\web_clb\app.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:625:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:527:27)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:4:17)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:28:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:2:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+March 16th 2020, 3:54:06 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:56:26 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:57:24 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:57:27 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 3:58:15 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:01:01 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:05:47 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\test_web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:06:03 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\test_web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:06:55 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\test_web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:07:22 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\test_web_clb\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\test_web_clb\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:10:07 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\connect_sequelize\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:10:33 pm '[INFO]': server is running in port 3000
+March 16th 2020, 4:13:45 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\connect_sequelize\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:16:14 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\connect_sequelize\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:18:45 pm '[ERROR]': uncaughtException: Cannot read property 'INTEGER' of undefined
+TypeError: Cannot read property 'INTEGER' of undefined
+    at module.exports (C:\Users\Dell\WebstormProjects\connect_sequelize\models\model.user.js:4:30)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\controllers\controller.users.js:3:44)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\routers\router.users.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\app.js:8:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 16th 2020, 4:19:57 pm '[INFO]': server is running in port 3000
+March 16th 2020, 4:22:51 pm '[INFO]': server is running in port 3000
+March 16th 2020, 4:23:15 pm '[INFO]': server is running in port 3000
+March 16th 2020, 4:23:15 pm '[INFO]': class extends Model {}
+March 16th 2020, 4:23:15 pm '[INFO]': GET / 304 
+
+March 16th 2020, 4:23:15 pm '[INFO]': POST / 500 
+
+March 16th 2020, 4:38:58 pm '[INFO]': server is running in port 3000
+March 16th 2020, 4:38:58 pm '[INFO]': POST / 200 
+
+March 16th 2020, 4:38:58 pm '[INFO]': class extends Model {}
+March 16th 2020, 4:38:58 pm '[INFO]': GET / 200 
+
+March 16th 2020, 4:38:58 pm '[INFO]': POST / 200 
+
+March 16th 2020, 4:44:23 pm '[INFO]': server is running in port 3000
+March 16th 2020, 4:45:02 pm '[INFO]': server is running in port 3000
+March 16th 2020, 4:45:02 pm '[INFO]': POST / 200 
+
+March 16th 2020, 4:49:16 pm '[ERROR]': uncaughtException: INTEGER is not defined
+ReferenceError: INTEGER is not defined
+    at module.exports (C:\Users\Dell\WebstormProjects\connect_sequelize\models\model.user.js:3:25)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\db\connectDatabase.js:25:48)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\controllers\controller.index.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\connect_sequelize\routers\router.index.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 16th 2020, 4:49:36 pm '[INFO]': server is running in port 3000
+March 16th 2020, 4:49:36 pm '[INFO]': POST / 200 
+
+March 16th 2020, 4:52:21 pm '[INFO]': server is running in port 3000
+March 16th 2020, 4:52:21 pm '[INFO]': POST / 200 
+
+March 16th 2020, 4:59:34 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:00:59 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:00:59 pm '[INFO]': POST / 200 
+
+March 16th 2020, 5:04:07 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:04:07 pm '[INFO]': POST / 200 
+
+March 16th 2020, 5:04:53 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:05:29 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:06:41 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:06:41 pm '[INFO]': POST / 200 
+
+March 16th 2020, 5:06:41 pm '[INFO]': POST / 200 
+
+March 16th 2020, 5:08:30 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:08:30 pm '[INFO]': POST / 200 
+
+March 16th 2020, 5:11:26 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:22:34 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:22:49 pm '[INFO]': server is running in port 3000
+March 16th 2020, 5:22:49 pm '[INFO]': POST / 200 
+

@@ -5,5 +5,4 @@ module.exports = (app)=>{
     app.put('/' , controllerIndex.update);
     app.delete('/' , controllerIndex.delete);
     app.get('/' , controllerIndex.getList);
-
 }

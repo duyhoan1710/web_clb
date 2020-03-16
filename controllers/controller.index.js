@@ -1,22 +1,23 @@
 let account_admin = require('../config').account_admin;
 let logger = require('../logger/logger');
-let Users = require('../models/model.user');
-logger.info(Users);
+let Users = require('../db/connectDatabase').userModel;
+
 module.exports = {
     get : (req , res , next )=>{
+        logger.info(Users);
         res.json({
             user : Users,
             message : 'true'
         })
     },
     post : (req ,res , next)=>{
-        Users.create({account_admin}).then((user)=>{
+        Users.create(account_admin).then((user)=>{
             logger.info(user);
             res.json({
                 message : true,
                 user : user
             })
-        }).status(200).catch((e)=>{
+        }).catch((e)=>{
             console.log(e);
             res.json({
                 message : false,
@@ -33,4 +34,4 @@ module.exports = {
     getList : (req ,res , next )=>{
 
     }
-}
+};

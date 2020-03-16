@@ -4,7 +4,12 @@ let config = require('../config');
 let sequelize = new Sequelize(config.database , config.username , config.password , {
     host : config.host,
     post : config.post,
-    dialect : config.dialect
+    dialect : config.dialect,
+    pool: {
+        max: 50,
+        min: 0,
+        idle: 10000
+    }
 });
 
 
@@ -15,7 +20,12 @@ sequelize.authenticate()
     .catch(err => {
         console.error('Unable to connect to the database:', err);
     });
-let db = {};
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+
+
+let userModel = require('../models/model.user')(sequelize , Sequelize);
+
+let db = {
+    userModel : userModel
+};
+
 module.exports = db;
