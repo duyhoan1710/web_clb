@@ -10,12 +10,22 @@ module.exports = (sequelize , Sequelize)=>{
         },
         roleName : {
             type : Sequelize.STRING(30),
-            allowNull : true,
+            allowNull : false,
             field : 'roleName'
         },
         description : {
             type : Sequelize.STRING(500),
+            allowNull : true,
             field : 'description'
+        },
+        createAt : {
+            type : Sequelize.DATE,
+            allowNull : false,
+            field  : 'createAt'
+        },
+        updateAt : {
+            type : Sequelize.DATE,
+            field : 'updateAt'
         }
     } , {
         tableName : 'Role',

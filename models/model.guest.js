@@ -10,25 +10,27 @@ module.exports = (sequelize , Sequelize)=>{
         },
         studentAccount : {
             type : Sequelize.STRING(15),
-            allowNull : true,
+            allowNull : false,
             field : 'studentAccount'
         },
         studentPassword : {
             type : Sequelize.STRING(50),
-            allowNull : true,
+            allowNull : false,
             field : 'studentPassword'
         },
         dataJson : {
             type : Sequelize.JSON,
-            allowNull : true,
+            allowNull : false,
             field : 'dataJson'
         },
         fullName : {
             type : Sequelize.STRING(30),
-            field : 'fullName'
+            field : 'fullName',
+            allowNull : true
         },
         classroom : {
             type : Sequelize.STRING(10),
+            allowNull : true,
             field : 'classroom'
         }
     }, {

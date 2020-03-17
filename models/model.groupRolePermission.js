@@ -10,17 +10,17 @@ module.exports = (sequelize , Sequelize)=>{
         },
         groupId : {
             type : Sequelize.INTEGER(20),
-            allowNull : true,
+            allowNull : false,
             field : 'groupId'
         },
         roleId : {
             type : Sequelize.INTEGER(20),
-            allowNull : true,
+            allowNull : false,
             field : 'roleId'
         },
         permissionId : {
             type : Sequelize.INTEGER(20),
-            allowNull : true,
+            allowNull : false,
             field : 'permissionId'
         }
     },{

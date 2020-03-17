@@ -9,42 +9,55 @@ module.exports = (sequelize , Sequelize)=>{
         },
         username : {
             type : Sequelize.STRING(45),
-            allowNull : true,
+            allowNull : false,
             unique : true,
             field  : "username"
         },
         password : {
             type : Sequelize.STRING(45),
-            allowNull : true,
+            allowNull : false,
             field : "password"
         },
         email : {
             type : Sequelize.STRING(50),
             unique : true,
-            allowNull : true,
+            allowNull : false,
             field : "email",
         },
         phone : {
             type : Sequelize.STRING(15),
-            allowNull : true,
+            allowNull : false,
             unique : true,
             field : "phone"
         },
         fullName : {
             type : Sequelize.STRING(50),
-            field : 'fullName'
+            field : 'fullName',
+            allowNull : true,
         },
         studentAccount : {
             type : Sequelize.STRING(10),
-            field : 'studentAccount'
+            field : 'studentAccount',
+            allowNull : true,
         },
         studentPassword : {
             type : Sequelize.STRING(50),
-            field : 'studentAccount'
+            field : 'studentAccount',
+            allowNull : true
         },
         dataJson : {
             type : Sequelize.JSON,
-            field : 'dataJson'
+            field : 'dataJson',
+            allowNull : true
+        },
+        createAt : {
+            type : Sequelize.DATE,
+            allowNull : false,
+            field : 'createAt',
+        },
+        updateAt : {
+            type : Sequelize.DATE,
+            field : 'updateAt'
         }
     },{
         tableName : 'User',

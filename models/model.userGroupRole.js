@@ -10,12 +10,12 @@ module.exports = (sequelize , Sequelize)=>{
         },
         userId : {
             type : Sequelize.INTEGER(20),
-            allowNull : true,
+            allowNull : false,
             field : 'userId'
         },
         groupId : {
             type : Sequelize.INTEGER(20),
-            allowNull : true,
+            allowNull : false,
             field : 'groupId'
         }
     },{

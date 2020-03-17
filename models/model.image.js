@@ -8,6 +8,11 @@ module.exports = (sequelize , Seqelize)=>{
             autoIncrement : true,
             field : 'id'
         },
+        newsId : {
+            type : Seqelize.INTEGER(20),
+            allowNull : false,
+            field : 'newId'
+        },
         imageName : {
             type : Seqelize.STRING(50),
             allowNull : true,

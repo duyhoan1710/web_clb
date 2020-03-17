@@ -10,13 +10,23 @@ module.exports = (sequelize , Sequelize)=>{
         },
         nameGroup : {
             type : Sequelize.STRING(50),
-            allowNull : true,
+            allowNull : false,
             unique : true,
             field : 'nameGroup'
         },
         description : {
             type : Sequelize.STRING(500),
+            allowNull : true,
             field : 'description'
+        },
+        createAt : {
+            type : Sequelize.DATE,
+            allowNull : false,
+            field : 'createAt',
+        },
+        updateAt : {
+            type : Sequelize.DATE,
+            field : 'updateAt'
         }
     },{
         tableName : 'Group',

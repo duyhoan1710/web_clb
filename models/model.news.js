@@ -10,25 +10,37 @@ module.exports = (sequelize , Sequelize)=>{
         },
         authorId : {
             type : Sequelize.INTEGER(20),
-            allowNull : true,
+            allowNull : false,
             field : 'authorId'
         },
         link : {
             type : Sequelize.STRING(100),
-            field : 'link'
+            field : 'link',
+            allowNull : false
         },
         title : {
             type : Sequelize.STRING(100),
-            field : 'title'
+            field : 'title',
+            allowNull : false
         },
         content : {
             type : Sequelize.STRING(10000),
-            field : 'content'
+            field : 'content',
+            allowNull : false
         },
         status : {
             type : Sequelize.BOOLEAN,
             defaultValue : false,
-            field : 'status'
+            field : 'status',
+        },
+        createAt : {
+            type : Sequelize.DATE,
+            allowNull : false,
+            field : 'createAt',
+        },
+        updateAt : {
+            type : Sequelize.DATE,
+            field : 'updateAt'
         }
     },{
         tableName : 'News',
