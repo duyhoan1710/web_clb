@@ -21,10 +21,12 @@ module.exports = (sequelize , Sequelize)=>{
         createAt : {
             type : Sequelize.DATE,
             allowNull : false,
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
             field  : 'createAt'
         },
         updateAt : {
             type : Sequelize.DATE,
+            defaultValue: sequelize.literal('CURRENT_TIMESTAMP'),
             field : 'updateAt'
         }
     } , {
