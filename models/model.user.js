@@ -1,7 +1,8 @@
+let logger = require('../logger/logger');
 module.exports = (sequelize , Sequelize)=>{
     let User = sequelize.define('User' , {
         id : {
-            type : Sequelize.INTEGER,
+            type : Sequelize.INTEGER(20),
             primaryKey : true,
             autoIncrement : true,
             field : 'id'
@@ -28,12 +29,33 @@ module.exports = (sequelize , Sequelize)=>{
             allowNull : true,
             unique : true,
             field : "phone"
+        },
+        fullName : {
+            type : Sequelize.STRING(50),
+            field : 'fullName'
+        },
+        studentAccount : {
+            type : Sequelize.STRING(10),
+            field : 'studentAccount'
+        },
+        studentPassword : {
+            type : Sequelize.STRING(50),
+            field : 'studentAccount'
+        },
+        dataJson : {
+            type : Sequelize.JSON,
+            field : 'dataJson'
         }
     },{
         tableName : 'User',
-        freezeTableName : true,
         timestamps : false
     });
+
+    User.sync().then(()=>{
+    }).catch(()=>{
+        logger.error('table user is error BUG ');
+    });
+
     return User;
 };
 

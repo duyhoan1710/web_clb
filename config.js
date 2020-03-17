@@ -10,10 +10,10 @@ let config = {
     uri : process.env.UriMysql,
 
     account_admin : {
-        username : process.env.username,
-        password : process.env.password,
-        email : process.env.email,
-        phone : process.env.phone
+        username : process.env.username_admin,
+        password : process.env.password_admin,
+        email : process.env.email_admin,
+        phone : process.env.phone_admin
     }
 };
 module.exports = config;

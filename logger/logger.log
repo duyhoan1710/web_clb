@@ -916,3 +916,194 @@ March 16th 2020, 5:44:23 pm '[INFO]': POST / 200
 March 16th 2020, 6:56:23 pm '[INFO]': server is running in port 3000
 March 16th 2020, 6:56:23 pm '[INFO]': POST / 200 
 
+March 16th 2020, 7:33:01 pm '[INFO]': server is running in port 3000
+March 16th 2020, 7:33:01 pm '[INFO]': POST / 200 
+
+March 16th 2020, 9:25:45 pm '[INFO]': server is running in port 3000
+March 16th 2020, 9:25:45 pm '[INFO]': POST / 200 
+
+March 16th 2020, 9:25:45 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:18:08 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:19:51 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:22:15 pm '[ERROR]': uncaughtException: e is not defined
+ReferenceError: e is not defined
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:41:15)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:25:48)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 16th 2020, 10:23:15 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:23:15 pm '[INFO]': table user is create success
+March 16th 2020, 10:23:15 pm '[INFO]': [object SequelizeInstance:User]
+March 16th 2020, 10:23:15 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:23:15 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:31:03 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:31:03 pm '[INFO]': table user is create success
+March 16th 2020, 10:31:03 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:38:13 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:38:13 pm '[INFO]': table user is create success
+March 16th 2020, 10:38:13 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:38:47 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:38:47 pm '[INFO]': table user is create success
+March 16th 2020, 10:38:47 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:38:47 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:48:55 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:48:55 pm '[INFO]': table user is create success
+March 16th 2020, 10:48:55 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:49:15 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:49:15 pm '[INFO]': table user is create success
+March 16th 2020, 10:49:15 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:54:45 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:54:45 pm '[INFO]': table user is create success
+March 16th 2020, 10:56:08 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:56:08 pm '[INFO]': POST / 200 
+
+March 16th 2020, 10:57:48 pm '[INFO]': server is running in port 3000
+March 16th 2020, 10:57:48 pm '[INFO]': POST / 200 
+
+March 16th 2020, 11:13:02 pm '[INFO]': server is running in port 3000
+March 16th 2020, 11:13:02 pm '[ERROR]': table user is error BUG 
+March 16th 2020, 11:13:02 pm '[INFO]': POST / 200 
+
+March 16th 2020, 11:13:02 pm '[INFO]': [object SequelizeInstance:User]
+March 16th 2020, 11:13:02 pm '[INFO]': POST / 200 
+
+March 16th 2020, 11:13:02 pm '[INFO]': POST / 200 
+
+March 16th 2020, 11:17:47 pm '[INFO]': server is running in port 3000
+March 16th 2020, 11:17:47 pm '[ERROR]': table user is error BUG 
+March 16th 2020, 11:18:36 pm '[INFO]': server is running in port 3000
+March 16th 2020, 11:19:51 pm '[INFO]': server is running in port 3000
+March 16th 2020, 11:19:51 pm '[INFO]': POST / 200 
+
+March 16th 2020, 11:58:55 pm '[INFO]': server is running in port 3000
+March 16th 2020, 11:59:31 pm '[ERROR]': uncaughtException: Unexpected token }
+C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:47
+        }
+        ^
+
+SyntaxError: Unexpected token }
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:25:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+March 17th 2020, 12:00:59 am '[ERROR]': uncaughtException: Unexpected token }
+C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:47
+        }
+        ^
+
+SyntaxError: Unexpected token }
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:25:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+March 17th 2020, 12:08:13 am '[ERROR]': uncaughtException: Unexpected token }
+C:\Users\Dell\WebstormProjects\web_clb\models\model.user.js:47
+        }
+        ^
+
+SyntaxError: Unexpected token }
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:25:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+March 17th 2020, 12:13:55 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:24:56 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:26:48 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:32:33 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:42:48 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:43:16 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:49:10 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:49:36 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:53:36 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:56:39 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:56:48 am '[INFO]': server is running in port 3000
+March 17th 2020, 12:59:19 am '[INFO]': server is running in port 3000
+March 17th 2020, 1:05:26 am '[INFO]': server is running in port 3000
+March 17th 2020, 1:07:16 am '[INFO]': server is running in port 3000
+March 17th 2020, 1:08:03 am '[INFO]': server is running in port 3000
+March 17th 2020, 1:17:34 am '[INFO]': server is running in port 3000
+March 17th 2020, 1:20:02 am '[INFO]': server is running in port 3000
+March 17th 2020, 1:20:31 am '[INFO]': server is running in port 3000
+March 17th 2020, 1:21:00 am '[INFO]': server is running in port 3000
+March 17th 2020, 1:24:33 am '[INFO]': server is running in port 3000
