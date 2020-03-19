@@ -5,7 +5,7 @@ let logger = require('./logger/logger');
 let app = express();
 
 app.use(morgan(':method :url :status ', {"stream": logger.stream}));
-// require('./routers/router.users')(app);
+
 require('./routers/router.index')(app);
 
 app.listen(3000 , ()=>{

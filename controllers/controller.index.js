@@ -1,6 +1,6 @@
 let account_admin = require('../config').account_admin;
 let logger = require('../logger/logger');
-let Users = require('../db/connectDatabase').userModel;
+let Users = require('../db/index').userModel;
 
 
 console.log(account_admin);

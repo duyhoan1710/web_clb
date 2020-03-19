@@ -1,33 +1,32 @@
 let logger = require('../logger/logger');
 
-module.exports = (sequelize , Sequelize)=>{
-    let UserGroupRole = sequelize.define('UserGroupRole' , {
+
+module.exports = (sequelize , Sequelize) =>{
+    let groupRole = sequelize.define('GroupRole' , {
         id : {
             type : Sequelize.INTEGER(20),
             primaryKey : true,
             autoIncrement : true,
             field : 'id'
         },
-        userId : {
+        groupId : {
             type : Sequelize.INTEGER(20),
             allowNull : false,
-            field : 'userId'
+            field : 'groupId'
         },
-        groupRoleId : {
+        roleId : {
             type : Sequelize.INTEGER(20),
             allowNull : false,
-            field : 'groupRoleId'
+            field : 'roleId'
         }
     },{
-        tableName : 'UserGroupRole',
+        tableName : 'GroupRole',
         timestamps : false
     });
 
-    UserGroupRole.sync().then(()=>{
+    groupRole.sync().then(()=>{
 
     }).catch(()=>{
-        logger.error('table UserGroupRole is not create success');
-    });
-
-    return UserGroupRole;
-};
+        logger.error('table groupRole is not create success BUG');
+    })
+}

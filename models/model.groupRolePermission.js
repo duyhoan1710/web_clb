@@ -8,15 +8,10 @@ module.exports = (sequelize , Sequelize)=>{
             autoIncrement : true,
             field : 'id'
         },
-        groupId : {
+        groupRoleId : {
             type : Sequelize.INTEGER(20),
             allowNull : false,
-            field : 'groupId'
-        },
-        roleId : {
-            type : Sequelize.INTEGER(20),
-            allowNull : false,
-            field : 'roleId'
+            field : 'groupRoleId'
         },
         permissionId : {
             type : Sequelize.INTEGER(20),

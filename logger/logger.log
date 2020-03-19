@@ -1107,3 +1107,88 @@ March 17th 2020, 1:20:02 am '[INFO]': server is running in port 3000
 March 17th 2020, 1:20:31 am '[INFO]': server is running in port 3000
 March 17th 2020, 1:21:00 am '[INFO]': server is running in port 3000
 March 17th 2020, 1:24:33 am '[INFO]': server is running in port 3000
+March 19th 2020, 7:46:59 am '[ERROR]': uncaughtException: Cannot find module '../models/model.imageNews'
+Require stack:
+- C:\Users\Dell\WebstormProjects\web_clb\db\index.js
+- C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js
+- C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js
+- C:\Users\Dell\WebstormProjects\web_clb\app.js
+Error: Cannot find module '../models/model.imageNews'
+Require stack:
+- C:\Users\Dell\WebstormProjects\web_clb\db\index.js
+- C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js
+- C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js
+- C:\Users\Dell\WebstormProjects\web_clb\app.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:625:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:527:27)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:12:22)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+March 19th 2020, 7:47:10 am '[ERROR]': uncaughtException: Cannot find module '../models/model.imageNews'
+Require stack:
+- C:\Users\Dell\WebstormProjects\web_clb\db\index.js
+- C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js
+- C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js
+- C:\Users\Dell\WebstormProjects\web_clb\app.js
+Error: Cannot find module '../models/model.imageNews'
+Require stack:
+- C:\Users\Dell\WebstormProjects\web_clb\db\index.js
+- C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js
+- C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js
+- C:\Users\Dell\WebstormProjects\web_clb\app.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:625:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:527:27)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:12:22)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:13)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.index.js:1:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+March 19th 2020, 7:50:16 am '[INFO]': server is running in port 3000
+March 19th 2020, 7:50:16 am '[INFO]': POST / 200 
+
+March 19th 2020, 7:51:42 am '[INFO]': server is running in port 3000
+March 19th 2020, 7:51:42 am '[INFO]': POST / 200 
+
+March 19th 2020, 7:52:59 am '[INFO]': server is running in port 3000
+March 19th 2020, 7:52:59 am '[INFO]': POST / 200 
+
+March 19th 2020, 7:53:18 am '[INFO]': server is running in port 3000
+March 19th 2020, 7:55:31 am '[INFO]': server is running in port 3000
+March 19th 2020, 7:55:31 am '[INFO]': [object SequelizeInstance:User]
+March 19th 2020, 7:55:31 am '[INFO]': POST / 200 
+
+March 19th 2020, 8:00:45 am '[INFO]': server is running in port 3000
+March 19th 2020, 8:01:18 am '[INFO]': server is running in port 3000
+March 19th 2020, 8:24:19 am '[INFO]': server is running in port 3000
