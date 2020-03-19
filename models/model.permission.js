@@ -11,12 +11,13 @@ module.exports =(sequelize , Sequelize)=>{
         permissionName : {
             type : Sequelize.STRING(30),
             allowNull : false,
-            field: 'permissionName'
+            field: 'permissionName',
+            unique : true,
         },
         description : {
             type : Sequelize.STRING(500),
             field : 'description',
-            allowNull : true
+            allowNull : true,
         },
         createAt : {
             type : Sequelize.DATE,

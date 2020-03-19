@@ -24,6 +24,6 @@ let db = {
     imageModel : imageModel
 };
 
-require('../models/references/model.renferences')(db);
+require('../models/references/model.references')(db);
 
 module.exports = db;

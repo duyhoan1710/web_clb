@@ -14,13 +14,9 @@ module.exports = (sequelize , Seqelize)=>{
             field : 'newId'
         },
         imageName : {
-            type : Seqelize.STRING(50),
+            type : Seqelize.STRING(100),
             allowNull : true,
             field : 'imageName'
-        },
-        link : {
-            type : Seqelize.STRING(100),
-            field : 'link'
         }
     },{
         tableName : 'Image',

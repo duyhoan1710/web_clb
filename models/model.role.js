@@ -11,6 +11,7 @@ module.exports = (sequelize , Sequelize)=>{
         roleName : {
             type : Sequelize.STRING(30),
             allowNull : false,
+            unique : true,
             field : 'roleName'
         },
         description : {
