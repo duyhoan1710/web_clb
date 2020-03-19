@@ -1,17 +1,17 @@
 module.exports = {
     groups : [
-        {groupName: 'manageGroup' , description : 'ban điều hành'},
-        {groupName: 'mediaGroup' , description: 'ban truyền thông'},
-        {groupName: 'logistiventGroup' , description : 'ban hậu cần + ban sự kiện = ban hậu sự'},
-        {groupName: 'humanGroup' , description : 'ban nhân sự'},
-        {groupName: 'developerGroup' , description : 'group dev'},
+        {groupName: 'manageGroup' , description : ''},
+        {groupName: 'mediaGroup' , description: ''},
+        {groupName: 'logistiventGroup' , description : ''},
+        {groupName: 'humanGroup' , description : ''},
+        {groupName: 'developerGroup' , description : ''},
     ],
-    role : [
-        {roleName: 'leader' , description : 'trưởng ban , nhóm'},
-        {roleName: 'viceLeader' , description: 'phó ban , nhóm'},
-        {role : 'member' , description : 'thành viên'}
+    roles : [
+        {roleName: 'leader' , description : ''},
+        {roleName: 'viceLeader' , description: ''},
+        {roleName: 'member' , description : ''}
     ],
-    permission : [
+    permissions : [
         // quyền cơ bản
         {permissionName: 'getUser' , description : ''},
         {permissionName: 'updateUser' , description : ''},

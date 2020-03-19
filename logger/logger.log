@@ -3086,3 +3086,309 @@ Error: Unrecognized datatype for attribute "UserGroupRole.status"
     at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
     at internal/main/run_main_module.js:17:11
 March 19th 2020, 10:07:19 pm '[INFO]': server is running in port 3000
+March 19th 2020, 11:14:47 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:3:50)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:16:01 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:3:50)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:16:34 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:3:50)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:17:15 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:17:33 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:17:39 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:17:57 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:18:01 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:18:09 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:7:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:19:57 pm '[ERROR]': uncaughtException: Cannot read property 'map' of undefined
+TypeError: Cannot read property 'map' of undefined
+    at insertDataToGroups (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:6:12)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:39:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:20:21 pm '[ERROR]': uncaughtException: Cannot read property 'map' of undefined
+TypeError: Cannot read property 'map' of undefined
+    at insertDataToGroups (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:6:12)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:39:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:20:31 pm '[ERROR]': uncaughtException: Cannot read property 'map' of undefined
+TypeError: Cannot read property 'map' of undefined
+    at insertDataToGroups (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:6:12)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:40:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:20:54 pm '[ERROR]': uncaughtException: Cannot read property 'map' of undefined
+TypeError: Cannot read property 'map' of undefined
+    at insertDataToGroups (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:6:12)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:40:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:21:57 pm '[ERROR]': uncaughtException: Cannot read property 'length' of undefined
+TypeError: Cannot read property 'length' of undefined
+    at insertDataToGroups (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:6:31)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:39:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:22:22 pm '[ERROR]': uncaughtException: Cannot read property 'length' of undefined
+TypeError: Cannot read property 'length' of undefined
+    at insertDataToGroups (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:6:31)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:40:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:22:33 pm '[ERROR]': uncaughtException: Cannot read property 'length' of undefined
+TypeError: Cannot read property 'length' of undefined
+    at insertDataToGroups (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:8:31)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\addGroupRolePermission.js:42:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 11:23:02 pm '[ERROR]': Incorrect string value: '\xC4\x91i\xE1\xBB\x81...' for column 'description' at row 1
+March 19th 2020, 11:23:02 pm '[ERROR]': Incorrect string value: '\xE1\xBB\xB1' for column 'description' at row 1
+March 19th 2020, 11:23:02 pm '[ERROR]': Incorrect string value: '\xE1\xBB\x81n t...' for column 'description' at row 1
+March 19th 2020, 11:23:02 pm '[ERROR]': Incorrect string value: '\xE1\xBA\xADu c...' for column 'description' at row 1
+March 19th 2020, 11:23:02 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:27:57 pm '[ERROR]': Incorrect string value: '\xC4\x91i\xE1\xBB\x81...' for column 'description' at row 1
+March 19th 2020, 11:27:57 pm '[ERROR]': Incorrect string value: '\xE1\xBB\x81n t...' for column 'description' at row 1
+March 19th 2020, 11:27:57 pm '[ERROR]': Incorrect string value: '\xE1\xBA\xADu c...' for column 'description' at row 1
+March 19th 2020, 11:27:57 pm '[ERROR]': Incorrect string value: '\xE1\xBB\xB1' for column 'description' at row 1
+March 19th 2020, 11:27:57 pm '[ERROR]': Validation error
+March 19th 2020, 11:29:54 pm '[ERROR]': Incorrect string value: '\xE1\xBA\xADu c...' for column 'description' at row 1
+March 19th 2020, 11:29:54 pm '[ERROR]': Incorrect string value: '\xE1\xBB\x81n t...' for column 'description' at row 1
+March 19th 2020, 11:29:54 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:29:54 pm '[ERROR]': Incorrect string value: '\xE1\xBB\xB1' for column 'description' at row 1
+March 19th 2020, 11:29:54 pm '[ERROR]': Validation error
+March 19th 2020, 11:32:11 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:32:11 pm '[ERROR]': Validation error
+March 19th 2020, 11:32:11 pm '[ERROR]': Validation error
+March 19th 2020, 11:32:11 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:32:11 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Group]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Role]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Role]
+March 19th 2020, 11:41:32 pm '[ERROR]': notNull Violation: Role.roleName cannot be null
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:41:32 pm '[INFO]': [object SequelizeInstance:Permission]
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[INFO]': [object SequelizeInstance:Role]
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error
+March 19th 2020, 11:44:39 pm '[ERROR]': Validation error

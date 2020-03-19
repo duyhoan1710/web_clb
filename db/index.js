@@ -1,6 +1,5 @@
 let {sequelize , Sequelize} = require('./connectDatabase');
 
-
 let userModel = require('../models/model.user')(sequelize , Sequelize);
 let groupModel = require('../models/model.group')(sequelize , Sequelize);
 let roleModel = require('../models/model.role')(sequelize, Sequelize);
@@ -12,7 +11,6 @@ let guestModel = require('../models/model.guest')(sequelize ,Sequelize);
 let newsModel = require('../models/model.news')(sequelize , Sequelize);
 let imageModel = require('../models/model.image')(sequelize , Sequelize);
 let notifyModel = require('../models/model.notify')(sequelize , Sequelize);
-console.log(process.env);
 
 let db = {
     userModel : userModel,
