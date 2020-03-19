@@ -1,5 +1,8 @@
 require('dotenv').config();
 
+
+
+
 let config = {
     database : process.env.database_mysql,
     username : process.env.username_mysql,
@@ -20,4 +23,5 @@ let config = {
         saltRounds : process.env.saltRounds,
     }
 };
+
 module.exports = config;

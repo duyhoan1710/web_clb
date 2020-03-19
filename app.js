@@ -10,6 +10,6 @@ require('./routers/router.index')(app);
 // require('./routers/router.login')(app);
 // require('./routers/router.register')(app);
 
-app.listen(3000 , ()=>{
+app.listen(3001 , ()=>{
     logger.info('server is running in port 3000');
 });

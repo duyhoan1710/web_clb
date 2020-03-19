@@ -2478,3 +2478,611 @@ Error: Dialect needs to be explicitly supplied as of v4.0.0
     at Function.Module._load (internal/modules/cjs/loader.js:556:12)
     at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
     at internal/main/run_main_module.js:17:11
+March 19th 2020, 6:35:14 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:4:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 6:35:37 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:4:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 6:35:48 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:4:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 6:35:58 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:6:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 6:36:10 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:6:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 6:37:08 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:6:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 6:41:26 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:6:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 9:47:20 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 19th 2020, 9:48:07 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 19th 2020, 9:48:15 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 19th 2020, 9:48:19 pm '[INFO]': server is running in port 3000
+March 19th 2020, 9:48:55 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:5:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 9:49:12 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:7:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 9:50:13 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:7:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 9:50:43 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:7:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 9:54:41 pm '[ERROR]': uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1228:14)
+    at listenInCluster (net.js:1276:12)
+    at Server.listen (net.js:1364:7)
+    at Function.listen (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+March 19th 2020, 9:55:00 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 19th 2020, 9:56:14 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 19th 2020, 9:56:29 pm '[ERROR]': uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1228:14)
+    at listenInCluster (net.js:1276:12)
+    at Server.listen (net.js:1364:7)
+    at Function.listen (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+March 19th 2020, 9:58:02 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 19th 2020, 9:58:39 pm '[INFO]': server is running in port 3000
+March 19th 2020, 9:58:46 pm '[ERROR]': uncaughtException: listen EADDRINUSE: address already in use :::3000
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (net.js:1228:14)
+    at listenInCluster (net.js:1276:12)
+    at Server.listen (net.js:1364:7)
+    at Function.listen (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:5)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+March 19th 2020, 9:58:56 pm '[INFO]': server is running in port 3000
+March 19th 2020, 9:59:06 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 19th 2020, 9:59:18 pm '[INFO]': server is running in port 3000
+March 19th 2020, 9:59:28 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 19th 2020, 9:59:58 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.index.js:3:19)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+March 19th 2020, 10:00:23 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:00:37 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:01:06 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:7:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:01:14 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:8:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:01:22 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:8:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:01:26 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:8:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:01:31 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:8:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:01:35 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:8:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:01:38 pm '[ERROR]': uncaughtException: userModel is not defined
+ReferenceError: userModel is not defined
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:18:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:01:41 pm '[ERROR]': uncaughtException: userModel is not defined
+ReferenceError: userModel is not defined
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:18:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:01:53 pm '[ERROR]': uncaughtException: userModel is not defined
+ReferenceError: userModel is not defined
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:18:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:02:02 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:8:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:03:12 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:8:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:03:15 pm '[ERROR]': uncaughtException: userModel is not defined
+ReferenceError: userModel is not defined
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:18:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:03:28 pm '[ERROR]': uncaughtException: userGroupRoleModel is not defined
+ReferenceError: userGroupRoleModel is not defined
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:22:26)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:04:25 pm '[ERROR]': uncaughtException: userGroupRoleModel is not defined
+ReferenceError: userGroupRoleModel is not defined
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:22:26)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:04:31 pm '[ERROR]': uncaughtException: Unrecognized datatype for attribute "UserGroupRole.status"
+Error: Unrecognized datatype for attribute "UserGroupRole.status"
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1005:15
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13401:38
+    at C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:4905:15
+    at baseForOwn (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:2990:24)
+    at Function.mapValues (C:\Users\Dell\WebstormProjects\web_clb\node_modules\lodash\lodash.js:13400:7)
+    at Function.init (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\model.js:1001:28)
+    at Sequelize.define (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:428:11)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\models\model.userGroupRole.js:4:35)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:8:66)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 19th 2020, 10:07:19 pm '[INFO]': server is running in port 3000

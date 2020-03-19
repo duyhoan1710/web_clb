@@ -19,7 +19,7 @@ module.exports = (sequelize , Sequelize)=>{
             field : 'groupRoleId'
         },
         status : {
-            type : Sequelize.Boolean,
+            type : Sequelize.BOOLEAN,
             allowNull : false,
             defaultValue : true,
             field : 'status'
