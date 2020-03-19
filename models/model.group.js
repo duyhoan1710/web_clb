@@ -1,14 +1,14 @@
 let logger = require('../logger/logger');
 
 module.exports = (sequelize , Sequelize)=>{
-    let Groups = sequelize.define('Group' , {
+    let group = sequelize.define('Group' , {
         id : {
            type : Sequelize.INTEGER(20),
             primaryKey : true,
             autoIncrement : true,
             field : 'id'
         },
-        nameGroup : {
+        groupName : {
             type : Sequelize.STRING(50),
             allowNull : false,
             unique : true,
@@ -35,11 +35,11 @@ module.exports = (sequelize , Sequelize)=>{
         timestamps : false
     });
 
-    Groups.sync().then(()=>{
+    group.sync().then(()=>{
 
     }).catch(()=>{
         logger.error('table group not create success BUG');
     });
 
-    return Groups;
+    return group;
 };

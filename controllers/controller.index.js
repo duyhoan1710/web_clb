@@ -1,20 +1,17 @@
-let account_admin = require('../config').account_admin;
+let account_admin = require('../config/config').account_admin;
 let logger = require('../logger/logger');
-let Users = require('../db/index').userModel;
+let {userModel} = require('../db/index');
 
 
-console.log(account_admin);
 module.exports = {
     get : (req , res , next )=>{
         res.json({
-            user : Users,
+            user : userModel,
             message : 'true'
         })
     },
     post : (req ,res , next)=>{
-        logger.debug(account_admin);
-        Users.create(account_admin).then((user)=>{
-            logger.info(user);
+        userModel.create(account_admin).then((user)=>{
             res.json({
                 message : true,
                 user : user

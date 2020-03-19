@@ -1,6 +1,6 @@
 let logger = require('../logger/logger');
 module.exports = (sequelize , Sequelize)=>{
-    let User = sequelize.define('User' , {
+    let user = sequelize.define('User' , {
         id : {
             type : Sequelize.INTEGER(20),
             primaryKey : true,
@@ -66,12 +66,12 @@ module.exports = (sequelize , Sequelize)=>{
         timestamps : false
     });
 
-    User.sync().then(()=>{
+    user.sync().then(()=>{
     }).catch(()=>{
         logger.error('table user is error BUG ');
     });
 
-    return User;
+    return user;
 };
 
 

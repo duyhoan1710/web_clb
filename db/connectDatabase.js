@@ -1,5 +1,5 @@
 let Sequelize = require('sequelize');
-let config = require('../config');
+let config = require('../config/config');
 let logger = require('../logger/logger');
 let sequelize = new Sequelize(config.database , config.username , config.password , {
     host : config.host,

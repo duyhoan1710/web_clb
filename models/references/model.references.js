@@ -1,14 +1,12 @@
-let logger = require('../../logger/logger');
-
 module.exports = (db)=>{
-    const { userModel , groupModel , roleModel , groupRoleModel, userGroupRoleModel , groupRolePermissionModel , permissionModel , guestModel , newsModel , imageModel } = db;
+    const { userModel , groupModel , roleModel , groupRoleModel, userGroupRoleModel , groupRolePermissionModel , permissionModel , newsModel , imageModel , notifyModel } = db;
 
     // role associate  with group
     groupModel.belongsToMany(roleModel , {through : groupRoleModel , as : 'role' , foreignKey : 'groupId'});
     roleModel.belongsToMany(groupModel , {through : groupRoleModel , as : 'group' , foreignKey : 'roleId'});
 
     groupRoleModel.belongsTo(roleModel , {foreignKey : 'roleId'});
-    groupRoleModel.belongsTo(groupModel , {foreignKey : 'groupId'});
+    groupRoleModel.belongsTo(groupModel,{foreignKey : 'groupId'});
 
     // user associate  with groupRole
 
@@ -21,7 +19,7 @@ module.exports = (db)=>{
     // permission associate  with groupRole
 
     permissionModel.belongsToMany(groupRoleModel , {through : groupRolePermissionModel , as : 'groupRole' , foreignKey : 'permissionId'});
-    groupRoleModel.belongsToMany(permissionModel , {through : groupRolePermissionModel , as : 'groupRole' , foreignKey : 'groupRoleId'});
+    groupRoleModel.belongsToMany(permissionModel , {through : groupRolePermissionModel , as : 'permission' , foreignKey : 'groupRoleId'});
 
     groupRolePermissionModel.belongsTo(permissionModel , {foreignKey : 'permissionId'});
     groupRolePermissionModel.belongsTo(groupRoleModel , {foreignKey : 'groupRoleId'});
@@ -33,4 +31,10 @@ module.exports = (db)=>{
     // news associate  with image
     newsModel.hasMany(imageModel , {as : 'news' , foreignKey : 'newsId'});
     imageModel.belongsTo(newsModel , {as : 'news' , foreignKey : 'newsId'});
+
+    // notify associate with author
+
+    userModel.hasMany(notifyModel , {as : 'notify' , foreignKey : 'authorId'});
+    notifyModel.belongsTo(userModel , {as : 'notify' , foreignKey : 'authorId'});
+
 };

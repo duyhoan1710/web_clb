@@ -1,7 +1,7 @@
 let logger = require('../logger/logger');
 
 module.exports = (sequelize , Sequelize)=>{
-    let Role = sequelize.define('Role' , {
+    let role = sequelize.define('Role' , {
         id : {
             type : Sequelize.INTEGER(20),
             primaryKey : true,
@@ -35,11 +35,11 @@ module.exports = (sequelize , Sequelize)=>{
         timestamps : false
     });
 
-    Role.sync().then(()=>{
+    role.sync().then(()=>{
 
     }).catch(()=>{
         logger.error('table role is not create success BUG');
     });
 
-    return Role;
-}
+    return role;
+};

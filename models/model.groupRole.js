@@ -28,7 +28,7 @@ module.exports = (sequelize , Sequelize) =>{
 
     }).catch(()=>{
         logger.error('table groupRole is not create success BUG');
-    })
+    });
 
 
     return groupRole;

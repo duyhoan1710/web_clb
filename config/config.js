@@ -14,6 +14,10 @@ let config = {
         password : process.env.password_admin,
         email : process.env.email_admin,
         phone : process.env.phone_admin
+    },
+
+    bcrypt : {
+        saltRounds : process.env.saltRounds,
     }
 };
 module.exports = config;

@@ -39,5 +39,7 @@ module.exports =(sequelize , Sequelize)=>{
 
     }).catch(()=>{
         logger.error('table permission is not create success BUG');
-    })
-}
+    });
+
+    return permission;
+};

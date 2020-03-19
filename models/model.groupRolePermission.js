@@ -1,7 +1,7 @@
 let logger = require('../logger/logger');
 
 module.exports = (sequelize , Sequelize)=>{
-    let GroupRolePermission = sequelize.define('GroupRolePermission' , {
+    let groupRolePermission = sequelize.define('GroupRolePermission' , {
         id : {
             type : Sequelize.INTEGER(20),
             primaryKey : true,
@@ -23,11 +23,11 @@ module.exports = (sequelize , Sequelize)=>{
         timestamps : false
     });
 
-    GroupRolePermission.sync().then(()=>{
+    groupRolePermission.sync().then(()=>{
 
     }).catch(()=>{
         logger.error('table GroupRolePermission is not create success BUG');
     });
 
-    return GroupRolePermission;
+    return groupRolePermission;
 };
