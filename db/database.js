@@ -5,6 +5,7 @@ module.exports = {
         {groupName: 'logistiventGroup' , description : ''},
         {groupName: 'humanGroup' , description : ''},
         {groupName: 'developerGroup' , description : ''},
+        {groupName: 'homelessGroup' , description : ''}
     ],
     roles : [
         {roleName: 'leader' , description : ''},
@@ -48,7 +49,7 @@ module.exports = {
                 {permissionName: 'getAllAdvanceProfileMember' , description : ''},
                 {permissionName: 'getListAdvanceProfileMember' , description : ''},
                 {permissionName: 'getNotify' , description : ''},
-                {permissionName: 'postNotify' , description : ''},
+                {permissionName: 'createNotify' , description : ''},
                 {permissionName: 'createNews' , description : ''},
                 {permissionName: 'updateNews' , description : ''},
                 {permissionName: 'deleteNews' , description : ''},
@@ -68,7 +69,7 @@ module.exports = {
         mediaGroup : {
             leader: [
                 {permissionName: 'getNotify' , description : ''},
-                {permissionName: 'postNotify' , description : ''},
+                {permissionName: 'createNotify' , description : ''},
                 {permissionName: 'createNews' , description : ''},
                 {permissionName: 'updateNews' , description : ''},
                 {permissionName: 'deleteNews' , description : ''},
@@ -85,7 +86,7 @@ module.exports = {
             ],
             viceLeader : [
                 {permissionName: 'getNotify' , description : ''},
-                {permissionName: 'postNotify' , description : ''},
+                {permissionName: 'createNotify' , description : ''},
                 {permissionName: 'createNews' , description : ''},
                 {permissionName: 'updateNews' , description : ''},
                 {permissionName: 'confirmNews' , description : ''},
@@ -115,7 +116,7 @@ module.exports = {
         logistiventGroup : {
             leader : [
                 {permissionName: 'getNotify' , description : ''},
-                {permissionName: 'postNotify' , description : ''},
+                {permissionName: 'createNotify' , description : ''},
                 {permissionName: 'getUser' , description : ''},
                 {permissionName: 'updateUser' , description : ''},
                 {permissionName: 'getAllBasicProfileMember' , description : ''},
@@ -127,7 +128,7 @@ module.exports = {
             ],
             viceLeader: [
                 {permissionName: 'getNotify' , description : ''},
-                {permissionName: 'postNotify' , description : ''},
+                {permissionName: 'createNotify' , description : ''},
                 {permissionName: 'getUser' , description : ''},
                 {permissionName: 'updateUser' , description : ''},
                 {permissionName: 'getAllBasicProfileMember' , description : ''},
@@ -152,7 +153,7 @@ module.exports = {
         humanGroup : {
             leader : [
                 {permissionName: 'getNotify' , description : ''},
-                {permissionName: 'postNotify' , description : ''},
+                {permissionName: 'createNotify' , description : ''},
                 {permissionName: 'createMember' , description : ''},
                 {permissionName: 'updateMember' , description : ''},
                 {permissionName: 'deleteMember' , description : ''},
@@ -170,7 +171,7 @@ module.exports = {
             ],
             viceLeader: [
                 {permissionName: 'getNotify' , description : ''},
-                {permissionName: 'postNotify' , description : ''},
+                {permissionName: 'createNotify' , description : ''},
                 {permissionName: 'getUser' , description : ''},
                 {permissionName: 'updateUser' , description : ''},
                 {permissionName: 'getAllBasicProfileMember' , description : ''},
@@ -196,7 +197,7 @@ module.exports = {
         developerGroup : {
             leader : [
                 {permissionName: 'getNotify' , description : ''},
-                {permissionName: 'postNotify' , description : ''},
+                {permissionName: 'createNotify' , description : ''},
                 {permissionName: 'getUser' , description : ''},
                 {permissionName: 'updateUser' , description : ''},
                 {permissionName: 'getAllBasicProfileMember' , description : ''},
@@ -208,7 +209,7 @@ module.exports = {
             ],
             viceLeader: [
                 {permissionName: 'getNotify' , description : ''},
-                {permissionName: 'postNotify' , description : ''},
+                {permissionName: 'createNotify' , description : ''},
                 {permissionName: 'getUser' , description : ''},
                 {permissionName: 'updateUser' , description : ''},
                 {permissionName: 'getAllBasicProfileMember' , description : ''},

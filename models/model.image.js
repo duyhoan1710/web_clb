@@ -11,7 +11,7 @@ module.exports = (sequelize , Seqelize)=>{
         newsId : {
             type : Seqelize.INTEGER(20),
             allowNull : false,
-            field : 'newId'
+            field : 'newsId'
         },
         imageName : {
             type : Seqelize.STRING(100),
