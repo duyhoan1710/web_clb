@@ -10,7 +10,7 @@ let sequelize = new Sequelize(config.database , config.username , config.passwor
     pool: {
         max: 50,
         min: 0,
-        idle: 50000
+        idle: 10000
     },define : {
         charset: 'utf8',
         collate: 'utf8_unicode_ci'

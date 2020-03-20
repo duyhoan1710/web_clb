@@ -14,7 +14,7 @@ module.exports = (sequelize , Sequelize)=>{
             field  : "username"
         },
         password : {
-            type : Sequelize.STRING(45),
+            type : Sequelize.STRING(100),
             allowNull : false,
             field : "password"
         },

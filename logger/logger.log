@@ -5406,3 +5406,66 @@ March 20th 2020, 3:10:34 pm '[INFO]': insert data to groupRolePermission : [obje
 March 20th 2020, 3:10:34 pm '[INFO]': insert data to groupRolePermission : [object SequelizeInstance:GroupRolePermission]
 March 20th 2020, 3:10:34 pm '[INFO]': insert data to groupRolePermission : [object SequelizeInstance:GroupRolePermission]
 March 20th 2020, 3:44:40 pm '[ERROR]': table image is not create success BUG
+March 20th 2020, 5:02:36 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:02:57 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:03:09 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:03:09 pm '[INFO]': GET /api/register 200 
+
+March 20th 2020, 5:03:09 pm '[INFO]': GET /api/login - 
+
+March 20th 2020, 5:19:35 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:19:35 pm '[INFO]': GET /api/login 200 
+
+March 20th 2020, 5:19:50 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:19:50 pm '[INFO]': POST /api/register 200 
+
+March 20th 2020, 5:22:14 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:22:14 pm '[ERROR]': hash password error : Error: data and salt arguments required
+March 20th 2020, 5:22:14 pm '[INFO]': POST /api/register 200 
+
+March 20th 2020, 5:25:20 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:25:20 pm '[ERROR]': hash password error : Error: data and salt arguments required
+March 20th 2020, 5:25:20 pm '[INFO]': POST /api/register 200 
+
+March 20th 2020, 5:25:20 pm '[ERROR]': hash password error : Error: Invalid salt. Salt must be in the form of: $Vers$log2(NumRounds)$saltvalue
+March 20th 2020, 5:25:20 pm '[INFO]': POST /api/register 200 
+
+March 20th 2020, 5:25:20 pm '[ERROR]': hash password error : Error: Invalid salt. Salt must be in the form of: $Vers$log2(NumRounds)$saltvalue
+March 20th 2020, 5:25:20 pm '[INFO]': POST /api/register 200 
+
+March 20th 2020, 5:27:31 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:27:31 pm '[ERROR]': hash password error : Error: Invalid salt. Salt must be in the form of: $Vers$log2(NumRounds)$saltvalue
+March 20th 2020, 5:27:31 pm '[INFO]': POST /api/register 200 
+
+March 20th 2020, 5:28:52 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:28:52 pm '[ERROR]': hash password error : Error: Invalid salt. Salt must be in the form of: $Vers$log2(NumRounds)$saltvalue
+March 20th 2020, 5:28:52 pm '[INFO]': POST /api/register 200 
+
+March 20th 2020, 5:32:12 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:32:12 pm '[ERROR]': create user error : SequelizeDatabaseError: Data too long for column 'password' at row 1
+March 20th 2020, 5:32:12 pm '[INFO]': POST /api/register - 
+
+March 20th 2020, 5:36:57 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:40:21 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:40:21 pm '[INFO]': create user success : [object SequelizeInstance:User]
+March 20th 2020, 5:42:09 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:42:09 pm '[ERROR]': create user error : SequelizeUniqueConstraintError: Validation error
+March 20th 2020, 5:43:30 pm '[INFO]': server is running in port 3000
+March 20th 2020, 5:43:30 pm '[ERROR]': create user error : SequelizeUniqueConstraintError: Validation error
+March 20th 2020, 5:43:30 pm '[INFO]': POST /api/register 200 
+
+March 20th 2020, 5:43:30 pm '[INFO]': create user success : [object SequelizeInstance:User]
+March 20th 2020, 5:43:30 pm '[INFO]': POST /api/register 200 
+
+March 20th 2020, 5:58:16 pm '[INFO]': server is running in port 3000
+March 20th 2020, 6:08:42 pm '[INFO]': server is running in port 3000
+March 20th 2020, 6:12:17 pm '[INFO]': server is running in port 3000
+March 20th 2020, 6:27:13 pm '[INFO]': server is running in port 3000
+March 20th 2020, 7:46:21 pm '[INFO]': server is running in port 3000
+March 20th 2020, 7:50:58 pm '[INFO]': server is running in port 3000
+March 20th 2020, 10:18:44 pm '[INFO]': server is running in port 3000
+March 20th 2020, 10:20:01 pm '[INFO]': server is running in port 3000
+March 20th 2020, 11:27:26 pm '[INFO]': server is running in port 3000
+March 20th 2020, 11:29:52 pm '[INFO]': server is running in port 3000
+March 21st 2020, 12:13:35 am '[INFO]': server is running in port 3000
+March 21st 2020, 12:13:41 am '[INFO]': server is running in port 3000
