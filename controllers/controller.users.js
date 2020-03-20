@@ -1,12 +1,74 @@
 let logger = require('../logger/logger');
-let {userModel , groupRoleModel, userGroupRoleModel} = require('../db/index');
+let {userModel ,groupModel , roleModel, groupRoleModel, userGroupRoleModel} = require('../db/index');
+let config = require('../config/config');
+let bcrypt = require('bcrypt');
 let getGroupId = require('../db/lib/getGroupId');
 let getRoleId = require('../db/lib/getGroupId');
 let getGroupRoleId = require('../db/lib/getGroupRoleId');
 
 module.exports = {
-    get : (req , res , next )=>{
-
+    getProfile : (req , res , next )=>{
+        let userId = req.user.userId;
+        userModel.findOne({where : {userId : userId}}).then((user)=>{
+            user.password = null;
+            res.json({
+                message : 'get profile success ',
+                user : user
+            });
+        }).catch((e)=>{
+            logger.error('find profile error : ' + e );
+        });
+    },
+    getProfileMember : (req , res , next )=>{
+        let userId = req.params.userId;
+        userModel.findOne({where : {userId : userId}}).then((user)=>{
+            user.password = null;
+            res.json({
+                message : 'get profile success ',
+                user : user
+            });
+        }).catch((e)=>{
+            logger.error('find profile error : ' + e );
+        });
+    },
+    createUser : (req , res , next ) =>{
+        let body = req.body;
+        // username , password , email , phone , fullName
+        bcrypt.hash(body.password , parseInt(config.bcrypt.saltRounds) , (err , hashPassword)=>{
+            if(err) {
+                logger.error('hash password error : ' + err );
+                res.json({
+                    message : 'hash password error',
+                    error : err
+                });
+            }else{
+                body.password = hashPassword;
+                userModel.create(body).then(async (user)=>{
+                    let groupId = await getGroupId(groupModel , 'homelessGroup');
+                    let roleId = await getRoleId(roleModel , 'member');
+                    let groupRoleId = await getGroupRoleId(groupRoleModel , groupId , roleId);
+                    await userGroupRoleModel.create({userId : user.id , groupRoleId : groupRoleId}).then((userGroupRole)=>{
+                        res.json({
+                            message : 'create user success',
+                            user : user,
+                            userGroupRole : userGroupRole
+                        });
+                    }).catch((e)=>{
+                        logger.error('create userGroupRole error : ' + e);
+                        res.json({
+                            message : 'create userGroupRole error ',
+                            error : e
+                        });
+                    });
+                }).catch((e)=>{
+                    logger.error('create user error : ' + e);
+                    res.json({
+                        message : 'create user error ',
+                        error : e
+                    });
+                });
+            }
+        });
     },
     update : (req ,res , next )=>{
         // key : username , id
@@ -64,35 +126,54 @@ module.exports = {
     },
     getGroupRoleFromUser : (req , res  ,next)=>{
         let userId = req.params.userId;
-
-    },
-    addUserToGroupRole : async (req , res , next)=>{
-        let groupId = req.params.groupId;
-        let roleId = req.params.roleId;
-        let userId = req.params.userId;
-        let groupRoleId = await getGroupRoleId(groupRoleModel , groupId , roleId);
-        userGroupRoleModel.create({userId: userId , groupRoleId : groupRoleId}).then((result)=>{
+        userGroupRoleModel.findAll({where : {userId : userId} , include : [{model : groupRoleModel}]}).then((groupRole)=>{
             res.json({
-                message : 'add user to group success',
-                result : result
-            })
+                message : 'find groupRole success',
+                groupRole : groupRole
+            });
         }).catch((e)=>{
-            logger.error('add user to group error : ' + e);
+            logger.error('find groupRole error : '+ e);
             res.json({
-                message : 'add user to group error',
+                message : 'find groupRole error',
                 error : e
             });
-        });
+        })
+
     },
-    updateUserToGroupRole :() =>{
+    updateUserToGroupRole : (req , res , next) =>{
         // list group and role to update user
         // let array = [
-        //     {groupId : '1' , roleId : '1' },
-        //     {groupId : '2' , roleId : '1' },
-        //     {groupId : '3' , roleId : '1' },
+        //     {groupName : 'manageGroup' , roleName : 'leader' },
+        //     {groupName : 'mediaGroup' , roleName : 'viceLeader' },
         // ]
-
-
-
+        let arrayGroupRole = req.body.groupRole;
+        let userId = req.params.userId;
+        userGroupRoleModel.destroy({where : {userId : userId}}).then(async (result)=>{
+            logger.info('destroy userGroupRole success : ' + result);
+            for(let i = 0 ; i < arrayGroupRole.length ; i++){
+                let groupId = await getGroupId(groupModel , arrayGroupRole[i].groupName);
+                let roleId = await getRoleId(roleModel , arrayGroupRole[i].roleName);
+                let groupRoleId = await getGroupRoleId(groupRoleModel , groupId , roleId);
+                await userGroupRoleModel.create({userId : userId , groupRoleId : groupRoleId}).then((result)=>{
+                    logger.info('add groupRole to user success : ' + result);
+                    res.json({
+                        message : 'add groupRole to user success',
+                        result : result
+                    });
+                }).catch((e)=>{
+                    logger.error('add groupRole to user error: ' + e);
+                    res.json({
+                        message : 'add groupRole to user error',
+                        error : e
+                    });
+                })
+            }
+        }).catch((e)=>{
+            logger.error('destroy userGroupRole error : ' + e);
+            res.json({
+                message : 'destroy userGroupRole error',
+                error : e
+            })
+        });
     }
 };
