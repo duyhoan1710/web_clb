@@ -3,12 +3,12 @@ let {userModel ,groupModel , roleModel, groupRoleModel, userGroupRoleModel} = re
 let config = require('../config/config');
 let bcrypt = require('bcrypt');
 let getGroupId = require('../db/lib/getGroupId');
-let getRoleId = require('../db/lib/getGroupId');
+let getRoleId = require('../db/lib/getRoleId');
 let getGroupRoleId = require('../db/lib/getGroupRoleId');
 
 module.exports = {
     getProfile : (req , res , next )=>{
-        let userId = req.user.userId;
+        let userId = req.user.id;
         userModel.findOne({where : {userId : userId}}).then((user)=>{
             user.password = null;
             res.json({
@@ -20,7 +20,7 @@ module.exports = {
         });
     },
     getProfileMember : (req , res , next )=>{
-        let userId = req.params.userId;
+        let userId = req.params.id;
         userModel.findOne({where : {userId : userId}}).then((user)=>{
             user.password = null;
             res.json({
@@ -74,8 +74,8 @@ module.exports = {
         // key : username , id
         // password , email , phone , fullName
         let body = req.body;
-        let id_user = req.params.id;
-        userModel.update({where: {id : id_user ,username : body.username}} , body).then((user)=>{
+        let userId = req.params.id;
+        userModel.update({where: {id : userId ,username : body.username}} , body).then((user)=>{
             res.json({
                 message : 'update user success',
                 user : user
@@ -92,8 +92,8 @@ module.exports = {
         // key : username , id
         // password , email , phone , fullName
         let body = req.body;
-        let id_user = req.params.id;
-        userModel.destroy({where: {id : id_user ,username : body.username}} , body).then((result)=>{
+        let userId = req.params.id;
+        userModel.destroy({where: {id : userId ,username : body.username}} , body).then((result)=>{
             res.json({
                 message : 'delete user success',
                 result : result
@@ -107,26 +107,153 @@ module.exports = {
         });
     },
     getListBasic : (req ,res , next )=>{
-        let groupId = req.params.groupId;
-        groupRoleModel.findAll({where : {groupId : groupId}}).then((listGroupRole)=>{
-            res.json({
-                message : 'get list basic profile user from groupRole',
-                listGroupRole : listGroupRole
+        let groupId = req.params.id;
+        groupRoleModel.findAll({
+            where : {groupId : groupId},
+        }).then((listGroupRole)=>{
+            let listGroupRoleId = [];
+            for(let i = 0 ; i < listGroupRole.length ; i++){
+                 listGroupRoleId.push(listGroupRole[i].id);
+            }
+            userGroupRoleModel.findAll({
+                where : {
+                    groupRoleId : listGroupRoleId
+                },
+                attributes : ['userId'],
+                include : [
+                    {
+                        model : groupRoleModel ,
+                        attributes : ['groupId' , 'roleId'],
+                        include : [
+                            {model : groupModel , attributes : ['id' , 'groupName']},
+                            {model : roleModel , attributes : ['id' , 'roleName']}
+                        ]
+                    },
+                    {model : userModel , attributes : ['id' , 'username' , 'fullName']}
+                ]
+            }).then((listUser)=>{
+                res.json({
+                    message : 'get user by groupRoleId success',
+                    listUser : listUser
+                })
+            }).catch((e)=>{
+                logger.error('get user by groupRoleId error : ' + e );
+                res.json({
+                    message : 'get user by groupRoleId',
+                    error : e
+                });
             })
-        })
+        }).catch((e)=>{
+            logger.error('get list user basic error : ' + e);
+            res.json({
+                message : 'get list user basic error',
+                error : e
+            });
+        });
     },
     getAllBasic : (req ,res , next )=>{
-
+        userModel.findAll({attributes : ['id' , 'username', 'fullName'], where : {}}).then((listUSer)=>{
+            res.json({
+                message : 'get list user success',
+                listUser : listUSer
+            });
+        }).catch((e)=>{
+            logger.error('get list user error : ' + e);
+            res.json({
+                message : 'get list user error',
+                error : e
+            });
+        });
     },
     getListAdvance : (req ,res , next )=>{
-
+        let groupId = req.params.id;
+        groupRoleModel.findAll({
+            where : {groupId : groupId},
+        }).then((listGroupRole)=>{
+            let listGroupRoleId = [];
+            for(let i = 0 ; i < listGroupRole.length ; i++){
+                listGroupRoleId.push(listGroupRole[i].id);
+            }
+            userGroupRoleModel.findAll({
+                where : {
+                    groupRoleId : listGroupRoleId
+                },
+                attributes : ['userId'],
+                include : [
+                    {
+                        model : groupRoleModel ,
+                        attributes : ['groupId' , 'roleId'],
+                        include : [
+                            {model : groupModel , attributes : ['id' , 'groupName']},
+                            {model : roleModel , attributes : ['id' , 'roleName']}
+                        ]
+                    },
+                    {model : userModel , attributes : ['id' , 'username' , 'fullName' , 'email' , 'phone']}
+                ]
+            }).then((listUser)=>{
+                res.json({
+                    message : 'get user by groupRoleId success',
+                    listUser : listUser
+                })
+            }).catch((e)=>{
+                logger.error('get user by groupRoleId error : ' + e );
+                res.json({
+                    message : 'get user by groupRoleId',
+                    error : e
+                });
+            })
+        }).catch((e)=>{
+            logger.error('get list user basic error : ' + e);
+            res.json({
+                message : 'get list user basic error',
+                error : e
+            });
+        });
     },
     getAllAdvance : (req ,res , next )=>{
-
+        userGroupRoleModel.findAll({
+            attributes: ['UserId'],
+            where: {},
+            include: [
+                {
+                    model: groupRoleModel,
+                    attributes: ['groupId', 'roleId'],
+                    include: [
+                        {model: groupModel, attributes: ['id', 'groupName']},
+                        {model: roleModel, attributes: ['id', 'roleName']}
+                    ]
+                },
+                {
+                    model: userModel,
+                    attributes: ['id', 'username', 'fullName', 'email', 'phone'],
+                }
+            ]
+        }).then((listUser)=>{
+            res.json({
+                message : 'get list user success',
+                listUser : listUser
+            })
+        }).catch((e)=>{
+            logger.error('get list user error : ' + e);
+            res.json({
+                message : 'get list user error',
+                error : e
+            });
+        });
     },
     getGroupRoleFromUser : (req , res  ,next)=>{
-        let userId = req.params.userId;
-        userGroupRoleModel.findAll({where : {userId : userId} , include : [{model : groupRoleModel}]}).then((groupRole)=>{
+        let userId = req.params.id;
+        userGroupRoleModel.findAll({
+            attributes : ['userId' , 'groupRoleId'],
+            where : {userId : userId} ,
+            include : [{
+                model : groupRoleModel ,
+                include : [
+                    {model : groupModel , attributes : ['id' , 'groupName']} ,
+                    {model : roleModel , attributes : ['id' , 'roleName']},
+                ]
+            }]
+        }).then((groupRole)=>{
             res.json({
                 message : 'find groupRole success',
                 groupRole : groupRole
@@ -138,7 +265,6 @@ module.exports = {
                 error : e
             });
         })
-
     },
     updateUserToGroupRole : (req , res , next) =>{
         // list group and role to update user
@@ -147,7 +273,7 @@ module.exports = {
         //     {groupName : 'mediaGroup' , roleName : 'viceLeader' },
         // ]
         let arrayGroupRole = req.body.groupRole;
-        let userId = req.params.userId;
+        let userId = req.params.id;
         userGroupRoleModel.destroy({where : {userId : userId}}).then(async (result)=>{
             logger.info('destroy userGroupRole success : ' + result);
             for(let i = 0 ; i < arrayGroupRole.length ; i++){

@@ -14,23 +14,24 @@ module.exports = {
     ],
     permissions : [
         // quyền cơ bản
-        {permissionName: 'getUser' , description : ''},
-        {permissionName: 'updateUser' , description : ''},
-        {permissionName: 'getAllBasicProfileMember' , description : ''},
-        {permissionName: 'getListBasicProfileMember' , description : ''},
-        {permissionName: 'getNotify' , description : ''},
-        {permissionName:  'joinGroup' , description : ''},
-        {permissionName:  'outGroup' , description : ''},
+        {permissionName: 'getUser' , description : ''},// xong
+        {permissionName: 'updateUser' , description : ''}, // xong
+        {permissionName: 'getAllBasicProfileMember' , description : ''}, //xong
+        {permissionName: 'getListBasicProfileMember' , description : ''}, // xong
+        {permissionName: 'getNotify' , description : ''}, // xong
+        {permissionName: 'getListNotify' , description : ''}, // xong
+        {permissionName:  'joinGroup' , description : ''}, // tạm thời bỏ
+        {permissionName:  'outGroup' , description : ''},  //
         
         // 
-        {permissionName: 'createNotify' , description : ''},
-        {permissionName: 'createMember' , description : ''},
-        {permissionName: 'updateMember' , description : ''},
-        {permissionName: 'deleteMember' , description : ''},
-        {permissionName: 'updateMemberToGroupRole' , description : ''},
-        {permissionName: 'getAllAdvanceProfileMember' , description : ''},
-        {permissionName: 'getListAdvanceProfileMember' , description : ''},
-        {permissionName: 'confirmInviteJoinGroup' , description : ''},
+        {permissionName: 'createNotify' , description : ''}, // xong
+        {permissionName: 'createMember' , description : ''}, // xong
+        {permissionName: 'updateMember' , description : ''}, // xong
+        {permissionName: 'deleteMember' , description : ''}, // xong
+        {permissionName: 'updateMemberToGroupRole' , description : ''}, // xong
+        {permissionName: 'getAllAdvanceProfileMember' , description : ''}, // xong
+        {permissionName: 'getListAdvanceProfileMember' , description : ''}, // xong
+        {permissionName: 'confirmInviteJoinGroup' , description : ''}, // tạm thời bỏ
         //
         {permissionName: 'createNews' , description : ''},
         {permissionName: 'updateNews' , description : ''},

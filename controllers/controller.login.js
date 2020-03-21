@@ -36,11 +36,5 @@ module.exports = {
     },
     logout : (req , res , next) => {
 
-    },
-    getSchedule : (req , res , next)=>{
-
-    },
-    postSchedule : (req , res , next)=>{
-
     }
 };

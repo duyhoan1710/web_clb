@@ -7,6 +7,7 @@ let sequelize = new Sequelize(config.database , config.username , config.passwor
     host : config.host,
     post : config.post,
     dialect : config.dialect,
+    logging: false,
     pool: {
         max: 50,
         min: 0,

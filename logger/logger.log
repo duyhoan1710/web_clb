@@ -5469,3 +5469,330 @@ March 20th 2020, 11:27:26 pm '[INFO]': server is running in port 3000
 March 20th 2020, 11:29:52 pm '[INFO]': server is running in port 3000
 March 21st 2020, 12:13:35 am '[INFO]': server is running in port 3000
 March 21st 2020, 12:13:41 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:20:06 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:23:02 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:24:25 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:24:37 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:26:52 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:26:52 am '[INFO]': GET /api/user/allBasic 404 
+
+March 21st 2020, 11:30:19 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:30:19 am '[ERROR]': find profile error : Error: WHERE parameter "userId" has invalid "undefined" value
+March 21st 2020, 11:30:19 am '[INFO]': GET /api/user/allBasic - 
+
+March 21st 2020, 11:34:17 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:34:17 am '[INFO]': GET /api/user/allBasic 200 
+
+March 21st 2020, 11:34:17 am '[INFO]': GET /api/user/allAdvance 404 
+
+March 21st 2020, 11:36:16 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:36:16 am '[INFO]': GET /api/user/allAdvance 200 
+
+March 21st 2020, 11:36:16 am '[INFO]': GET /api/user/getGroupRoleFromUser/1 200 
+
+March 21st 2020, 11:36:16 am '[INFO]': POST /api/register 404 
+
+March 21st 2020, 11:36:16 am '[ERROR]': create user error : SequelizeUniqueConstraintError: Validation error
+March 21st 2020, 11:36:16 am '[INFO]': POST /api/user 200 
+
+March 21st 2020, 11:36:16 am '[ERROR]': find group by name error : memberSequelizeDatabaseError: Unknown column 'Role.groupName' in 'where clause'
+March 21st 2020, 11:36:16 am '[ERROR]': create user error : SequelizeDatabaseError: Unknown column 'Role.groupName' in 'where clause'
+March 21st 2020, 11:36:16 am '[INFO]': POST /api/user 200 
+
+March 21st 2020, 11:46:46 am '[INFO]': server is running in port 3000
+March 21st 2020, 11:46:46 am '[ERROR]': create user error : SequelizeUniqueConstraintError: Validation error
+March 21st 2020, 11:46:46 am '[INFO]': POST /api/user 200 
+
+March 21st 2020, 11:46:46 am '[INFO]': POST /api/user 200 
+
+March 21st 2020, 11:46:46 am '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 12:29:39 pm '[INFO]': server is running in port 3000
+March 21st 2020, 1:49:07 pm '[INFO]': server is running in port 3000
+March 21st 2020, 1:49:07 pm '[ERROR]': find groupRole error : TypeError: include.model.getTableName is not a function
+March 21st 2020, 1:49:07 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 1:49:50 pm '[INFO]': server is running in port 3000
+March 21st 2020, 1:49:50 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 2:31:43 pm '[INFO]': server is running in port 3000
+March 21st 2020, 2:31:43 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 2:32:44 pm '[INFO]': server is running in port 3000
+March 21st 2020, 2:32:44 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 2:36:26 pm '[INFO]': server is running in port 3000
+March 21st 2020, 2:44:33 pm '[INFO]': server is running in port 3000
+March 21st 2020, 2:44:33 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 2:44:57 pm '[ERROR]': uncaughtException: Unexpected identifier
+C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:153
+            where : {userId : userId} ,
+            ^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:2:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 21st 2020, 2:45:05 pm '[ERROR]': uncaughtException: Unexpected identifier
+C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:153
+            where : {userId : userId} ,
+            ^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:2:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 21st 2020, 2:45:14 pm '[ERROR]': uncaughtException: Unexpected identifier
+C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:153
+            where : {userId : userId} ,
+            ^^^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:2:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 21st 2020, 2:46:48 pm '[INFO]': server is running in port 3000
+March 21st 2020, 2:46:48 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 2:49:02 pm '[INFO]': server is running in port 3000
+March 21st 2020, 2:49:02 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 2:50:10 pm '[INFO]': server is running in port 3000
+March 21st 2020, 2:50:10 pm '[ERROR]': find groupRole error : SequelizeDatabaseError: Unknown column 'GroupRole.groupRoleId' in 'field list'
+March 21st 2020, 2:50:10 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 2:50:21 pm '[INFO]': server is running in port 3000
+March 21st 2020, 2:50:21 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 2:50:21 pm '[INFO]': destroy userGroupRole success : 1
+March 21st 2020, 2:50:21 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 21st 2020, 2:50:21 pm '[INFO]': PUT /api/user/updateUserToGroupRole/8 200 
+
+March 21st 2020, 2:50:21 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 2:50:21 pm '[INFO]': destroy userGroupRole success : 1
+March 21st 2020, 2:50:21 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 21st 2020, 2:50:21 pm '[INFO]': PUT /api/user/updateUserToGroupRole/8 200 
+
+March 21st 2020, 2:50:21 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 21st 2020, 2:50:21 pm '[ERROR]': add groupRole to user error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 21st 2020, 2:50:21 pm '[ERROR]': destroy userGroupRole error : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 21st 2020, 2:50:21 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 3:42:32 pm '[INFO]': server is running in port 3000
+March 21st 2020, 3:42:32 pm '[INFO]': GET /api/user/listBasic/14 - 
+
+March 21st 2020, 3:47:07 pm '[INFO]': server is running in port 3000
+March 21st 2020, 3:47:07 pm '[ERROR]': get list user basic error : SequelizeEagerLoadingError: UserGroupRole is not associated to GroupRole!
+March 21st 2020, 3:47:07 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 4:44:53 pm '[INFO]': server is running in port 3000
+March 21st 2020, 4:44:53 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 5:46:44 pm '[INFO]': server is running in port 3000
+March 21st 2020, 5:46:44 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 5:52:16 pm '[INFO]': server is running in port 3000
+March 21st 2020, 5:57:21 pm '[INFO]': server is running in port 3000
+March 21st 2020, 5:57:21 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 5:59:24 pm '[INFO]': server is running in port 3000
+March 21st 2020, 5:59:24 pm '[INFO]': 
+March 21st 2020, 5:59:24 pm '[INFO]': ,[object SequelizeInstance:UserGroupRole]
+March 21st 2020, 5:59:24 pm '[INFO]': ,[object SequelizeInstance:UserGroupRole],
+March 21st 2020, 5:59:24 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 6:07:21 pm '[INFO]': server is running in port 3000
+March 21st 2020, 6:07:21 pm '[INFO]': 
+March 21st 2020, 6:07:21 pm '[INFO]': ,[object SequelizeInstance:UserGroupRole]
+March 21st 2020, 6:07:21 pm '[INFO]': ,[object SequelizeInstance:UserGroupRole],
+March 21st 2020, 6:07:21 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 6:08:14 pm '[INFO]': server is running in port 3000
+March 21st 2020, 6:08:14 pm '[INFO]': [[]]
+March 21st 2020, 6:08:14 pm '[INFO]': [[],[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}]]
+March 21st 2020, 6:08:14 pm '[INFO]': [[],[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}],[]]
+March 21st 2020, 6:08:14 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 6:08:14 pm '[INFO]': [[]]
+March 21st 2020, 6:08:14 pm '[INFO]': [[],[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}]]
+March 21st 2020, 6:08:14 pm '[INFO]': [[],[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}],[]]
+March 21st 2020, 6:08:14 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 6:12:00 pm '[INFO]': server is running in port 3000
+March 21st 2020, 6:12:00 pm '[INFO]': [[]]
+March 21st 2020, 6:12:00 pm '[INFO]': [[],[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}]]
+March 21st 2020, 6:12:00 pm '[INFO]': [[],[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}],[]]
+March 21st 2020, 6:12:00 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 6:13:01 pm '[INFO]': server is running in port 3000
+March 21st 2020, 6:13:01 pm '[INFO]': [[]]
+March 21st 2020, 6:13:01 pm '[INFO]': [[],[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}]]
+March 21st 2020, 6:13:01 pm '[INFO]': [[],[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}],[]]
+March 21st 2020, 6:13:01 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 6:20:15 pm '[INFO]': server is running in port 3000
+March 21st 2020, 6:20:15 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 6:20:15 pm '[INFO]': [[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}]]
+March 21st 2020, 6:20:15 pm '[INFO]': [[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}],[]]
+March 21st 2020, 6:20:15 pm '[INFO]': [[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}],[],[]]
+March 21st 2020, 6:25:06 pm '[INFO]': server is running in port 3000
+March 21st 2020, 6:25:06 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 6:25:06 pm '[INFO]': [[]]
+March 21st 2020, 6:25:06 pm '[INFO]': [[],[]]
+March 21st 2020, 6:25:06 pm '[INFO]': [[],[],[{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}]]
+March 21st 2020, 6:37:48 pm '[INFO]': server is running in port 3000
+March 21st 2020, 6:37:48 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 6:37:48 pm '[INFO]': [{"id":4,"userId":8,"groupRoleId":12,"status":true,"User":{"id":8,"username":"hoan3","fullName":"nguyen duy hoan"}}]
+March 21st 2020, 6:37:48 pm '[INFO]': []
+March 21st 2020, 6:37:48 pm '[INFO]': []
+March 21st 2020, 7:04:40 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:09:09 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:14:42 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:22:42 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:23:27 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:23:37 pm '[ERROR]': uncaughtException: Unexpected token }
+C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:122
+                },
+                ^
+
+SyntaxError: Unexpected token }
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:2:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:15:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 21st 2020, 7:26:22 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:26:22 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 7:35:26 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:35:56 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:35:56 pm '[ERROR]': get list user basic error : SequelizeDatabaseError: Unknown column 'GroupRole.userId' in 'field list'
+March 21st 2020, 7:35:56 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 7:36:22 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:36:22 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 7:41:51 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:41:51 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 7:42:54 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:43:13 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:43:13 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 7:49:14 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:49:14 pm '[INFO]': GET /api/user/listAdvance/14 200 
+
+March 21st 2020, 7:49:14 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 21st 2020, 7:49:14 pm '[INFO]': GET /api/user/allAdvance 200 
+
+March 21st 2020, 7:53:14 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:53:14 pm '[ERROR]': get list user error : SequelizeEagerLoadingError: GroupRole is associated to User using an alias. You must use the 'as' keyword to specify the alias within your include statement.
+March 21st 2020, 7:53:14 pm '[INFO]': GET /api/user/allAdvance 200 
+
+March 21st 2020, 7:55:53 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:55:53 pm '[INFO]': GET /api/user/allAdvance 200 
+
+March 21st 2020, 7:59:55 pm '[INFO]': server is running in port 3000
+March 21st 2020, 7:59:55 pm '[INFO]': GET /api/user/allAdvance 200 
+
+March 21st 2020, 8:09:35 pm '[INFO]': server is running in port 3000
+March 21st 2020, 8:09:35 pm '[INFO]': GET /api/user/allAdvance 200 
+
+March 21st 2020, 8:11:55 pm '[INFO]': server is running in port 3000
+March 21st 2020, 8:11:55 pm '[INFO]': GET /api/user/allAdvance 200 
+
+March 21st 2020, 8:26:50 pm '[INFO]': server is running in port 3000
+March 21st 2020, 8:26:50 pm '[ERROR]': get list user error : SequelizeDatabaseError: Unknown column 'UserGroupRole.username' in 'field list'
+March 21st 2020, 8:26:50 pm '[INFO]': GET /api/user/allAdvance 200 
+
+March 21st 2020, 8:27:19 pm '[INFO]': server is running in port 3000
+March 21st 2020, 8:28:02 pm '[INFO]': server is running in port 3000
+March 21st 2020, 8:28:34 pm '[INFO]': server is running in port 3000
+March 21st 2020, 8:28:34 pm '[INFO]': GET /api/user/allAdvance 200 
+
+March 21st 2020, 8:28:34 pm '[INFO]': GET /api/user/getGroupRoleFromUser/8 200 
+
+March 21st 2020, 8:28:34 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 21st 2020, 8:28:34 pm '[INFO]': GET /api/user/listBasic/14 200 
+
+March 21st 2020, 8:28:34 pm '[INFO]': GET /api/user/listAdvance/14 200 
+
+March 21st 2020, 8:43:13 pm '[INFO]': server is running in port 3000
+March 21st 2020, 8:44:06 pm '[INFO]': server is running in port 3000
+March 21st 2020, 9:18:23 pm '[INFO]': server is running in port 3000
+March 21st 2020, 10:21:27 pm '[INFO]': server is running in port 3000
+March 21st 2020, 10:22:09 pm '[INFO]': server is running in port 3000
+March 21st 2020, 11:43:56 pm '[INFO]': server is running in port 3000
