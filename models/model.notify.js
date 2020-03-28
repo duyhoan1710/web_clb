@@ -47,7 +47,7 @@ module.exports = (sequelize , Sequelize)=>{
     notify.sync().then(()=>{
 
     }).catch(()=>{
-        logger.error('table notyfy is not create success BUG');
+        logger.error('table notify is not create success BUG');
     });
 
     return notify;

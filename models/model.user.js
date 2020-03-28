@@ -35,6 +35,21 @@ module.exports = (sequelize , Sequelize)=>{
             field : 'fullName',
             allowNull : true,
         },
+        birthday : {
+            type : Sequelize.STRING(30),
+            allowNull : true,
+            field : 'birthday'
+        },
+        accessToken : {
+            type : Sequelize.STRING(500),
+            allowNull : true,
+            field : 'accessToken'
+        },
+        refreshToken : {
+            type : Sequelize.STRING(500),
+            allowNull : true,
+            field : 'refreshToken'
+        },
         studentAccount : {
             type : Sequelize.STRING(10),
             field : 'studentAccount',
@@ -68,7 +83,7 @@ module.exports = (sequelize , Sequelize)=>{
 
     user.sync().then(()=>{
     }).catch(()=>{
-        logger.error('table user is error BUG ');
+        logger.error('table user is not create success BUG ');
     });
 
     return user;

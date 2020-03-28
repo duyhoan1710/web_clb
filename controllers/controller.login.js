@@ -1,13 +1,9 @@
 let logger = require('../logger/logger');
 let bcrypt = require('bcrypt');
-let {userModel} = require('../db/index');
-
+let config = require('../config/config');
+let jwtHelper = require('../middleware/authenticate/jwtHelper');
+let {userGroupRoleModel , groupModel , roleModel , userModel , groupRoleModel} = require('../db/index');
 module.exports = {
-    get : (req , res  , next) =>{
-        res.json({
-            message : 'this is login page'
-        });
-    },
     post : (req , res , next ) =>{
         // username , password
         let body = req.body;
@@ -20,11 +16,57 @@ module.exports = {
                     });
                 }else{
                     if(result){
-                        user.password = null;
-                        res.json({
-                            message : 'login success',
-                            user : user
-                        });
+                        userGroupRoleModel.findAll({
+                            where : {
+                                userId : user.id
+                            },
+                            attributes : ['userId'],
+                            include : [
+                                {
+                                    model : groupRoleModel ,
+                                    attributes : ['groupId' , 'roleId'],
+                                    include : [
+                                        {model : groupModel , attributes : ['id' , 'groupName']},
+                                        {model : roleModel , attributes : ['id' , 'roleName']}
+                                    ]
+                                },
+                                {model : userModel , attributes : ['id', 'fullName' , 'username' , 'password']}
+                            ]
+                        }).then( async (users)=>{
+                            let dataGroupRole = [];
+                            for(let i = 0 ; i< users.length ; i++){
+                                dataGroupRole.push({groupId : users[i].GroupRole.Group.id , roleId : users[i].GroupRole.Role.id});
+                            }
+                            let dataUser = {
+                                id : users[0].User.id,
+                                fullName : users[0].User.fullName,
+                                username : users[0].User.username,
+                                password : users[0].User.password,
+                                groupRole : dataGroupRole
+                            };
+
+                            let accessToken = await jwtHelper.generateToken(dataUser , config.jwt.accessToken_secret ,config.jwt.timeLifeAccessToken);
+                            let refreshToken = await jwtHelper.generateToken(dataUser , config.jwt.refreshToken_secret , config.jwt.timeLifeRefreshToken);
+                            userModel.update({accessToken : accessToken , refreshToken : refreshToken},{where : {id : user.id}}).then((user)=>{
+                                res.json({
+                                    message : 'login success',
+                                    user : dataUser,
+                                    accessToken : accessToken,
+                                    refreshToken : refreshToken
+                                });
+                            }).catch((e)=>{
+                                res.json({
+                                    message : 'update token error',
+                                    error : e
+                                })
+                            })
+                        }).catch((e)=>{
+                            logger.error('login error : ' + e );
+                            res.json({
+                                message :'login error',
+                                error : e
+                            });
+                        })
                     }else{
                         res.json({
                             message : 'login false'

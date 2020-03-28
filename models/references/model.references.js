@@ -34,7 +34,10 @@ module.exports = (db)=>{
 
     // notify associate with author
 
-    userModel.hasMany(notifyModel , {as : 'notify' , foreignKey : 'authorId'});
-    notifyModel.belongsTo(userModel , {as : 'notify' , foreignKey : 'authorId'});
-
+    // userModel.hasMany(notifyModel , {as : 'notify' , foreignKey : 'authorId'});
+    // notifyModel.belongsTo(userModel , {as : 'notify' , foreignKey : 'authorId'});
+    userModel.belongsToMany(groupModel , {through : notifyModel , foreignKey : 'authorId'});
+    groupModel.belongsToMany(userModel , {through : notifyModel , foreignKey : 'groupId'});
+    notifyModel.belongsTo(userModel , {foreignKey : 'authorId'});
+    notifyModel.belongsTo(groupModel , {foreignKey : 'groupId'});
 };
