@@ -35,7 +35,12 @@ module.exports = {
                         }).then( async (users)=>{
                             let dataGroupRole = [];
                             for(let i = 0 ; i< users.length ; i++){
-                                dataGroupRole.push({groupId : users[i].GroupRole.Group.id , roleId : users[i].GroupRole.Role.id});
+                                dataGroupRole.push({
+                                    groupId : users[i].GroupRole.Group.id ,
+                                    groupName : users[i].GroupRole.Group.groupName,
+                                    roleId : users[i].GroupRole.Role.id,
+                                    roleName : users[i].GroupRole.Role.roleName
+                                });
                             }
                             let dataUser = {
                                 id : users[0].User.id,
@@ -77,6 +82,16 @@ module.exports = {
         })
     },
     logout : (req , res , next) => {
-
+        let userId = req.user.id;
+        userModel.update({accessToken : null , refreshToken : null} , {where : {id : userId}}).then((result)=>{
+            res.json({
+                message : 'logout success'
+            })
+        }).catch((e)=>{
+            res.json({
+                message : 'logout false',
+                error : e
+            })
+        })
     }
 };

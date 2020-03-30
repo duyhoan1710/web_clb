@@ -4,6 +4,7 @@ let config = require('../config/config');
 let getGroupId = require('../db/lib/getGroupId');
 let getRoleId = require('../db/lib/getRoleId');
 let getGroupRoleId = require('../db/lib/getGroupRoleId');
+let jwtHelper = require('../middleware/authenticate/jwtHelper');
 let bcrypt = require('bcrypt');
 let mergeDataUser = (users)=>{
     let dataGroupRole = [];
@@ -61,8 +62,7 @@ module.exports = {
         let userId = req.user.id;
         let username = req.user.username;
         let newPassword = req.body.password;
-
-        bcrypt.hash(newPassword , parseInt(config.bcrypt.saltRounds) , (err , hashPassword)=>{
+        bcrypt.hash(newPassword , parseInt(config.bcrypt.saltRounds) , async (err , hashPassword)=>{
             if(err) {
                 logger.error('hash password error : ' + err );
                 res.json({
@@ -70,10 +70,15 @@ module.exports = {
                     error : err
                 });
             }else{
-                userModel.update({password : hashPassword} ,{where: {id : userId ,username : username}}).then((result)=>{
+                req.user.password = hashPassword;
+                let accessToken =await jwtHelper.generateToken(req.user , config.jwt.accessToken_secret , config.jwt.timeLifeAccessToken);
+                let refreshToken = await jwtHelper.generateToken(req.user , config.jwt.refreshToken_secret , config.jwt.timeLifeRefreshToken);
+                userModel.update({password : hashPassword , accessToken : accessToken , refreshToken : refreshToken} ,{where: {id : userId ,username : username}}).then((result)=>{
                     res.json({
                         message : 'update user success',
-                        result : result
+                        result : result,
+                        accessToken : accessToken,
+                        refreshToken : refreshToken
                     });
                 }).catch((e)=>{
                     logger.error('update user error : ' + e);
@@ -88,7 +93,13 @@ module.exports = {
     outGroup : async (req , res , next)=>{
         let userId = req.user.id;
         let groupId = req.body.groupId;
-        let roleId = req.body.roleId;
+        let roleId = 0;
+        for(let i = 0 ; i < req.user.groupRole.length ; i++){
+            if(req.user.groupRole[i].groupId == groupId){
+                roleId = req.user.groupRole[i].roleId;
+                break;
+            }
+        }
         let groupRoleId = await getGroupRoleId(groupRoleModel , groupId , roleId);
         await userGroupRoleModel.destroy({where : {userId : userId , groupRoleId : groupRoleId}}).then((result)=>{
             userGroupRoleModel.findOne({where : {userId : userId}}).then(async (user)=>{
@@ -294,7 +305,7 @@ module.exports = {
     },
     getAllMemberBasic : (req ,res , next )=>{
         userGroupRoleModel.findAll({
-            attributes: ['UserId'],
+            attributes: ['userId'],
             where: {},
             include: [
                 {
@@ -370,7 +381,7 @@ module.exports = {
     },
     getAllMemberAdvance : (req ,res , next )=>{
         userGroupRoleModel.findAll({
-            attributes: ['UserId'],
+            attributes: ['userId'],
             where: {},
             include: [
                 {
@@ -388,11 +399,11 @@ module.exports = {
             ]
         }).then((listUser)=>{
             res.json({
-                message : 'get list user success',
+                message : 'get all user success',
                 listUser : listUser
             })
         }).catch((e)=>{
-            logger.error('get list user error : ' + e);
+            logger.error('get all user error : ' + e);
             res.json({
                 message : 'get list user error',
                 error : e

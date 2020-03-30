@@ -1,11 +1,18 @@
 let logger = require('../logger/logger');
 let {notifyModel , userModel , groupModel} = require('../db/index');
-
+let getGroupId = require('../db/lib/getGroupId');
 module.exports = {
-    getNotify : (req , res , next)=>{
+    getNotify : async (req , res , next)=>{
         let notifyId = req.params.notifyId;
+        let groupRole = req.user.groupRole;
+        let manageGroupId =await getGroupId(groupModel , 'manageGroup');
+        let arrayGroupId = [];
+        for(let i = 0 ;i < groupRole.length ; i++){
+            arrayGroupId.push(groupRole[i].groupId);
+        }
+        arrayGroupId.push(manageGroupId);
         notifyModel.findOne({
-            where : {id : notifyId},
+            where : {id : notifyId , groupId : arrayGroupId},
             attributes : ['id', 'title' ,'content'],
             include : [
                 {model : userModel , attributes : ['id' , 'fullName']},
@@ -24,10 +31,18 @@ module.exports = {
             })
         })
     },
-    getListNotify : (req , res , next)=>{
-        let groupId = req.params.groupId;
-        notifyModel.findAll({
-            where : {groupId : groupId},
+    getListNotify : async (req , res , next)=>{
+        let groupRole = req.user.groupRole;
+        console.log(groupRole);
+        let arrayGroupId = [];
+        for(let i = 0 ;i < groupRole.length ; i++){
+            arrayGroupId.push(groupRole[i].groupId);
+        }
+        let manageGroupId =await getGroupId(groupModel , 'manageGroup');
+        arrayGroupId.push(manageGroupId);
+        console.log(arrayGroupId);
+        await notifyModel.findAll({
+            where : {groupId : arrayGroupId},
             attributes : ['id' , 'title'],
             include : [
                 {model : userModel , attributes : ['id' , 'fullName']},

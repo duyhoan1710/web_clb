@@ -7997,3 +7997,648 @@ March 28th 2020, 5:21:21 pm '[INFO]': GET /api/notify/group/1 200
 
 March 28th 2020, 5:21:21 pm '[INFO]': GET /api/notify/group/1 200 
 
+March 28th 2020, 5:32:11 pm '[INFO]': server is running in port 3000
+March 28th 2020, 5:32:11 pm '[INFO]': GET /api/notify/group/1 200 
+
+March 28th 2020, 5:32:11 pm '[INFO]': GET /api/logout 500 
+
+March 28th 2020, 5:34:19 pm '[INFO]': server is running in port 3000
+March 28th 2020, 5:34:19 pm '[INFO]': GET /api/logout 200 
+
+March 28th 2020, 5:34:19 pm '[INFO]': GET /api/notify/group/1 200 
+
+March 28th 2020, 5:34:19 pm '[INFO]': POST /api/refreshToken 200 
+
+March 28th 2020, 5:34:19 pm '[INFO]': POST /api/login 200 
+
+March 28th 2020, 5:34:19 pm '[INFO]': GET /api/notify/2 200 
+
+March 28th 2020, 8:34:05 pm '[INFO]': server is running in port 3000
+March 28th 2020, 8:35:40 pm '[INFO]': server is running in port 3000
+March 28th 2020, 8:41:09 pm '[INFO]': server is running in port 3000
+March 28th 2020, 9:05:36 pm '[INFO]': server is running in port 3000
+March 28th 2020, 9:06:16 pm '[INFO]': server is running in port 3000
+March 29th 2020, 12:26:33 pm '[INFO]': server is running in port 3000
+March 29th 2020, 12:26:33 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 12:26:33 pm '[INFO]': POST /api/schedule/guest 200 
+
+March 29th 2020, 12:26:33 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 12:26:33 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 12:26:33 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 12:26:33 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 12:26:33 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 12:30:50 pm '[INFO]': server is running in port 3000
+March 29th 2020, 12:30:50 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 12:31:33 pm '[INFO]': server is running in port 3000
+March 29th 2020, 12:31:33 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 12:31:50 pm '[INFO]': server is running in port 3000
+March 29th 2020, 12:31:50 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 12:32:22 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:20:52 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:20:52 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 3:24:23 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:24:23 pm '[INFO]': GET /api/test 404 
+
+March 29th 2020, 3:26:24 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:26:24 pm '[INFO]': GET /api/test 200 
+
+March 29th 2020, 3:37:07 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:37:07 pm '[INFO]': POST /api/login 200 
+
+March 29th 2020, 3:39:20 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:39:20 pm '[ERROR]': login error : TypeError: Cannot read property 'GroupRole' of undefined
+March 29th 2020, 3:39:20 pm '[INFO]': POST /api/login 200 
+
+March 29th 2020, 3:40:14 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:40:14 pm '[INFO]': POST /api/login 200 
+
+March 29th 2020, 3:40:14 pm '[INFO]': GET /api/user 200 
+
+March 29th 2020, 3:40:14 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 29th 2020, 3:40:14 pm '[INFO]': GET /api/user/listBasic/6 200 
+
+March 29th 2020, 3:40:14 pm '[INFO]': GET /api/user/listBasic/1 200 
+
+March 29th 2020, 3:40:14 pm '[INFO]': GET /api/user/listBasic/2 200 
+
+March 29th 2020, 3:40:14 pm '[ERROR]': get user error : TypeError: Cannot read property 'User' of undefined
+March 29th 2020, 3:40:14 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:40:14 pm '[ERROR]': get user error : TypeError: Cannot read property 'User' of undefined
+March 29th 2020, 3:40:14 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:44:43 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:44:43 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 29th 2020, 3:44:43 pm '[INFO]': GET /api/user/listBasic/2 200 
+
+March 29th 2020, 3:44:43 pm '[ERROR]': get user error : TypeError: Cannot read property 'User' of undefined
+March 29th 2020, 3:44:43 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:44:43 pm '[INFO]': GET /api/member/listAdvance/2 200 
+
+March 29th 2020, 3:46:39 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:46:39 pm '[ERROR]': get user error : TypeError: Cannot read property 'User' of undefined
+March 29th 2020, 3:46:39 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:47:38 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:47:38 pm '[ERROR]': get user error : TypeError: Cannot read property 'User' of undefined
+March 29th 2020, 3:47:38 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:47:38 pm '[INFO]': GET /api/user/listBasic/2 200 
+
+March 29th 2020, 3:47:38 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 29th 2020, 3:48:47 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:48:47 pm '[ERROR]': get user error : TypeError: Cannot read property 'User' of undefined
+March 29th 2020, 3:48:47 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:48:47 pm '[ERROR]': get user error : TypeError: Cannot read property 'User' of undefined
+March 29th 2020, 3:48:47 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:50:08 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:50:08 pm '[ERROR]': get user error : TypeError: Cannot read property 'User' of undefined
+March 29th 2020, 3:50:08 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:50:08 pm '[INFO]': GET /api/user 500 
+
+March 29th 2020, 3:50:08 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 29th 2020, 3:50:08 pm '[INFO]': GET /api/user/listBasic/2 200 
+
+March 29th 2020, 3:50:08 pm '[ERROR]': get user error : TypeError: Cannot read property 'User' of undefined
+March 29th 2020, 3:50:08 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:58:52 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:58:52 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 29th 2020, 3:58:52 pm '[INFO]': GET /api/user 500 
+
+March 29th 2020, 3:59:45 pm '[INFO]': server is running in port 3000
+March 29th 2020, 3:59:45 pm '[INFO]': GET /api/user 200 
+
+March 29th 2020, 3:59:45 pm '[INFO]': GET /api/schedule 200 
+
+March 29th 2020, 3:59:45 pm '[INFO]': GET /api/member/1 200 
+
+March 29th 2020, 3:59:45 pm '[INFO]': GET /api/member/1 404 
+
+March 29th 2020, 3:59:45 pm '[INFO]': GET /api/user/1 200 
+
+March 29th 2020, 3:59:45 pm '[INFO]': GET /api/user 200 
+
+March 29th 2020, 4:06:22 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:13:56 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:13:56 pm '[INFO]': GET /api/groupRole 200 
+
+March 29th 2020, 4:24:59 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:24:59 pm '[INFO]': GET /api/outGroup 404 
+
+March 29th 2020, 4:24:59 pm '[INFO]': GET /api/user/outGroup 404 
+
+March 29th 2020, 4:24:59 pm '[INFO]': DELETE /api/user/outGroup 200 
+
+March 29th 2020, 4:24:59 pm '[INFO]': GET /api/user 404 
+
+March 29th 2020, 4:24:59 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 4:24:59 pm '[INFO]': GET /api/user/profile/1 404 
+
+March 29th 2020, 4:24:59 pm '[INFO]': GET /api/member/profile/1 200 
+
+March 29th 2020, 4:24:59 pm '[INFO]': DELETE /api/user/outGroup 200 
+
+March 29th 2020, 4:24:59 pm '[INFO]': destroy userGroupRole success : 1
+March 29th 2020, 4:24:59 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 29th 2020, 4:24:59 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 29th 2020, 4:24:59 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 29th 2020, 4:24:59 pm '[ERROR]': add groupRole to user error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 29th 2020, 4:24:59 pm '[ERROR]': destroy userGroupRole error : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 29th 2020, 4:24:59 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 4:24:59 pm '[INFO]': DELETE /api/user/outGroup 200 
+
+March 29th 2020, 4:24:59 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 4:33:39 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:34:37 pm '[ERROR]': uncaughtException: Unexpected token )
+C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:93
+        for(let i = 0 ; i < res.user.)
+                                     ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:2:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 29th 2020, 4:35:15 pm '[ERROR]': uncaughtException: Unexpected token )
+C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:94
+            if(res.user.groupRole[i].)
+                                     ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:2:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 29th 2020, 4:35:24 pm '[ERROR]': uncaughtException: Unexpected token }
+C:\Users\Dell\WebstormProjects\web_clb\controllers\controller.users.js:95
+        }
+        ^
+
+SyntaxError: Unexpected token }
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:2:23)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 29th 2020, 4:36:39 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:36:39 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 4:36:39 pm '[INFO]': destroy userGroupRole success : 1
+March 29th 2020, 4:36:39 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 29th 2020, 4:36:39 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 29th 2020, 4:36:39 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 29th 2020, 4:36:39 pm '[ERROR]': add groupRole to user error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 29th 2020, 4:36:39 pm '[ERROR]': destroy userGroupRole error : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 29th 2020, 4:36:39 pm '[INFO]': DELETE /api/user/outGroup - 
+
+March 29th 2020, 4:41:43 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:41:43 pm '[INFO]': DELETE /api/user/outGroup 200 
+
+March 29th 2020, 4:41:43 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 4:41:43 pm '[INFO]': POST /api/login 200 
+
+March 29th 2020, 4:43:11 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:44:11 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:45:34 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:45:34 pm '[ERROR]': find groupRole by name error : TypeError: Cannot read property 'id' of null
+March 29th 2020, 4:45:34 pm '[INFO]': DELETE /api/user/outGroup - 
+
+March 29th 2020, 4:49:34 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:49:34 pm '[ERROR]': find groupRole by id error : TypeError: Cannot read property 'id' of null
+March 29th 2020, 4:50:16 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:50:16 pm '[ERROR]': find groupRole by id error : TypeError: Cannot read property 'id' of null
+March 29th 2020, 4:51:43 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:52:16 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:52:16 pm '[INFO]': DELETE /api/user/outGroup 200 
+
+March 29th 2020, 4:52:16 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 4:52:16 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 4:54:11 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:54:11 pm '[INFO]': DELETE /api/user/outGroup 200 
+
+March 29th 2020, 4:55:17 pm '[INFO]': server is running in port 3000
+March 29th 2020, 4:55:17 pm '[INFO]': PUT /api/user/password 200 
+
+March 29th 2020, 4:55:17 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 5:13:12 pm '[INFO]': server is running in port 3000
+March 29th 2020, 5:13:12 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 5:13:12 pm '[INFO]': POST /api/login 200 
+
+March 29th 2020, 5:13:12 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 5:13:12 pm '[INFO]': PUT /api/user/password 200 
+
+March 29th 2020, 5:13:12 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 5:13:12 pm '[INFO]': GET /api/user/profile 200 
+
+March 29th 2020, 7:36:57 pm '[INFO]': server is running in port 3000
+March 29th 2020, 7:36:57 pm '[INFO]': POST /api/login 200 
+
+March 29th 2020, 7:36:57 pm '[INFO]': POST /api/login 200 
+
+March 29th 2020, 7:36:57 pm '[INFO]': POST /api/login 200 
+
+March 29th 2020, 8:30:34 pm '[INFO]': server is running in port 3000
+March 29th 2020, 8:30:34 pm '[INFO]': POST /api/test 200 
+
+March 29th 2020, 8:31:39 pm '[INFO]': server is running in port 3000
+March 29th 2020, 8:31:39 pm '[INFO]': POST /api/test 200 
+
+March 29th 2020, 8:31:39 pm '[INFO]': POST /api/test 200 
+
+March 29th 2020, 8:31:39 pm '[INFO]': POST /api/test 200 
+
+March 29th 2020, 8:31:39 pm '[INFO]': POST /api/test 200 
+
+March 29th 2020, 8:31:39 pm '[INFO]': POST /api/test 200 
+
+March 29th 2020, 8:37:39 pm '[INFO]': server is running in port 3000
+March 29th 2020, 8:45:35 pm '[INFO]': server is running in port 3000
+March 29th 2020, 8:49:55 pm '[INFO]': server is running in port 3000
+March 29th 2020, 8:51:18 pm '[INFO]': server is running in port 3000
+March 29th 2020, 8:51:18 pm '[INFO]': POST /api/test 200 
+
+March 29th 2020, 8:52:00 pm '[INFO]': server is running in port 3000
+March 29th 2020, 8:53:34 pm '[INFO]': server is running in port 3000
+March 29th 2020, 8:53:34 pm '[INFO]': POST /api/schedule/guest 200 
+
+March 29th 2020, 11:59:52 pm '[INFO]': server is running in port 3000
+March 30th 2020, 12:00:19 am '[INFO]': server is running in port 3000
+March 30th 2020, 1:03:44 am '[INFO]': server is running in port 3000
+March 30th 2020, 3:58:59 pm '[ERROR]': uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\application.js:482:19)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:2:9)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:38)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 3:59:10 pm '[INFO]': server is running in port 3000
+March 30th 2020, 3:59:46 pm '[ERROR]': uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\application.js:482:19)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:2:9)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:38)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:00:04 pm '[ERROR]': uncaughtException: next is not a function
+TypeError: next is not a function
+    at x (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:7:5)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:2:27)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:38)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:00:41 pm '[ERROR]': uncaughtException: next is not a function
+TypeError: next is not a function
+    at x (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:7:5)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:2:27)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:38)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:00:50 pm '[ERROR]': uncaughtException: next is not a function
+TypeError: next is not a function
+    at x (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:7:5)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:2:27)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:38)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:00:56 pm '[ERROR]': uncaughtException: next is not a function
+TypeError: next is not a function
+    at x (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:7:5)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:2:27)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:38)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:01:25 pm '[ERROR]': uncaughtException: next is not a function
+TypeError: next is not a function
+    at x (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:6:5)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:2:27)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:38)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:02:07 pm '[ERROR]': uncaughtException: next is not defined
+ReferenceError: next is not defined
+    at x (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:6:5)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:2:27)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:38)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:03:03 pm '[ERROR]': uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\router\route.js:202:15)
+    at Function.app.<computed> [as get] (C:\Users\Dell\WebstormProjects\web_clb\node_modules\express\lib\application.js:482:19)
+    at module.exports (C:\Users\Dell\WebstormProjects\web_clb\routers\test\router.test.js:2:9)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:13:38)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:03:24 pm '[INFO]': server is running in port 3000
+March 30th 2020, 4:03:55 pm '[INFO]': server is running in port 3000
+March 30th 2020, 4:03:55 pm '[INFO]': GET /api/test 200 
+
+March 30th 2020, 4:39:54 pm '[INFO]': server is running in port 3000
+March 30th 2020, 4:39:54 pm '[INFO]': POST /api/login 200 
+
+March 30th 2020, 4:39:54 pm '[INFO]': POST /api/member - 
+
+March 30th 2020, 4:41:15 pm '[INFO]': server is running in port 3000
+March 30th 2020, 4:41:15 pm '[INFO]': POST /api/member 200 
+
+March 30th 2020, 4:42:25 pm '[ERROR]': uncaughtException: Unexpected token )
+C:\Users\Dell\WebstormProjects\web_clb\middleware\authorize\authorize.user.js:17
+            for()
+                ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:43:10 pm '[ERROR]': uncaughtException: Unexpected token )
+C:\Users\Dell\WebstormProjects\web_clb\middleware\authorize\authorize.user.js:18
+                if(listPermission[i].)
+                                     ^
+
+SyntaxError: Unexpected token )
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:43:17 pm '[ERROR]': uncaughtException: Unexpected token }
+C:\Users\Dell\WebstormProjects\web_clb\middleware\authorize\authorize.user.js:19
+            }
+            ^
+
+SyntaxError: Unexpected token }
+    at Module._compile (internal/modules/cjs/loader.js:720:22)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\routers\router.users.js:3:21)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\app.js:18:1)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 4:45:22 pm '[INFO]': server is running in port 3000
+March 30th 2020, 4:45:22 pm '[INFO]': POST /api/member 200 
+
+March 30th 2020, 4:45:22 pm '[INFO]': POST /api/login 200 
+
+March 30th 2020, 4:45:22 pm '[INFO]': POST /api/login 200 
+
+March 30th 2020, 4:45:22 pm '[INFO]': POST /api/member 200 
+
+March 30th 2020, 4:49:29 pm '[INFO]': server is running in port 3000
+March 30th 2020, 4:58:51 pm '[INFO]': server is running in port 3000
+March 30th 2020, 4:58:51 pm '[INFO]': GET /api/user/profile 200 
+
+March 30th 2020, 4:58:51 pm '[INFO]': GET /api/user/allBasic 404 
+
+March 30th 2020, 4:58:51 pm '[INFO]': GET /api/user/allMember 404 
+
+March 30th 2020, 4:58:51 pm '[INFO]': GET /api/member/allMember 200 
+
+March 30th 2020, 5:09:06 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:09:59 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:09:59 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 5:09:59 pm '[INFO]': POST /api/login 200 
+
+March 30th 2020, 5:09:59 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 5:09:59 pm '[INFO]': GET /api/member/allAdvance 404 
+
+March 30th 2020, 5:11:38 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:11:38 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 30th 2020, 5:11:38 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 5:25:58 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:25:58 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 5:30:15 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:39:23 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:42:11 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:42:11 pm '[INFO]': POST /api/login 200 
+
+March 30th 2020, 5:42:11 pm '[ERROR]': create notify error : SequelizeUniqueConstraintError: Validation error
+March 30th 2020, 5:42:11 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 5:47:24 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:47:24 pm '[INFO]': GET /api/notify/group 200 
+
+March 30th 2020, 5:48:28 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:48:28 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 5:48:28 pm '[ERROR]': create notify error : SequelizeUniqueConstraintError: Validation error
+March 30th 2020, 5:48:28 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 5:48:28 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 5:48:28 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 5:57:17 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:57:17 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 5:57:17 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 5:58:09 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:58:09 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 5:59:49 pm '[INFO]': server is running in port 3000
+March 30th 2020, 5:59:49 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 6:00:17 pm '[INFO]': server is running in port 3000
+March 30th 2020, 6:00:17 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 6:01:21 pm '[INFO]': server is running in port 3000
+March 30th 2020, 6:01:21 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 6:01:21 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 30th 2020, 6:01:21 pm '[INFO]': GET /api/user/profile 200 
+
+March 30th 2020, 6:01:21 pm '[INFO]': GET /api/notify/2 200 
+
+March 30th 2020, 6:01:21 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 6:09:52 pm '[INFO]': server is running in port 3000
+March 30th 2020, 6:09:52 pm '[INFO]': GET /api/notify/list 200 
+
+March 30th 2020, 6:09:52 pm '[INFO]': GET /api/notify/listNotify 200 
+
+March 30th 2020, 6:27:07 pm '[INFO]': server is running in port 3000
+March 30th 2020, 6:27:07 pm '[INFO]': GET /api/notify/listNotify 200 
+
+March 30th 2020, 6:27:58 pm '[INFO]': server is running in port 3000
+March 30th 2020, 6:29:00 pm '[INFO]': server is running in port 3000
+March 30th 2020, 6:29:00 pm '[INFO]': GET /api/notify/listNotify 200 
+
+March 30th 2020, 6:29:00 pm '[INFO]': GET /api/notify/listNotify 200 
+
+March 30th 2020, 6:29:00 pm '[INFO]': GET /api/notify/2 200 
+
+March 30th 2020, 6:29:00 pm '[INFO]': GET /api/notify/1 200 
+
+March 30th 2020, 6:29:00 pm '[INFO]': GET /api/notify/3 200 
+
+March 30th 2020, 6:29:00 pm '[INFO]': GET /api/notify/2 200 
+
+March 30th 2020, 6:30:52 pm '[INFO]': server is running in port 3000
