@@ -8901,3 +8901,12 @@ March 30th 2020, 9:37:28 pm '[INFO]': GET /api/listNotify 200
 
 March 30th 2020, 9:59:15 pm '[INFO]': server is running in port 3000
 March 30th 2020, 10:06:52 pm '[INFO]': server is running in port 3000
+March 30th 2020, 10:08:03 pm '[INFO]': server is running in port 3000
+March 30th 2020, 10:08:03 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 10:08:03 pm '[INFO]': GET /api/groupRole 200 
+
+March 30th 2020, 10:08:03 pm '[INFO]': POST /api/refreshToken 200 
+
+March 30th 2020, 10:08:03 pm '[INFO]': GET /api/groupRole 200 
+
