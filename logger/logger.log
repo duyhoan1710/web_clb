@@ -8642,3 +8642,19 @@ March 30th 2020, 6:29:00 pm '[INFO]': GET /api/notify/3 200
 March 30th 2020, 6:29:00 pm '[INFO]': GET /api/notify/2 200 
 
 March 30th 2020, 6:30:52 pm '[INFO]': server is running in port 3000
+March 30th 2020, 6:30:52 pm '[INFO]': GET /api/notify/2 200 
+
+March 30th 2020, 6:30:52 pm '[INFO]': POST /api/refreshToken 200 
+
+March 30th 2020, 6:30:52 pm '[INFO]': GET /api/notify/2 200 
+
+March 30th 2020, 6:30:52 pm '[INFO]': GET /api/notify/1 200 
+
+March 30th 2020, 6:30:52 pm '[INFO]': GET /api/notify/listNotify 200 
+
+March 30th 2020, 6:30:52 pm '[INFO]': GET /api/notify/listNotify 200 
+
+March 30th 2020, 7:13:42 pm '[INFO]': server is running in port 3000
+March 30th 2020, 7:13:42 pm '[INFO]': GET /api/notify/listNotify 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': server is running in port 3000

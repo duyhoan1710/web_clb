@@ -33,7 +33,7 @@ module.exports = {
     },
     getListNotify : async (req , res , next)=>{
         let groupRole = req.user.groupRole;
-        console.log(groupRole);
+        logger.info(groupRole);
         let arrayGroupId = [];
         for(let i = 0 ;i < groupRole.length ; i++){
             arrayGroupId.push(groupRole[i].groupId);
