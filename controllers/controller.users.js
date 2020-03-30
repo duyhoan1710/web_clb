@@ -421,23 +421,28 @@ module.exports = {
         userGroupRoleModel.destroy({where : {userId : userId}}).then(async (result)=>{
             logger.info('destroy userGroupRole success : ' + result);
             for(let i = 0 ; i < arrayGroupRole.length ; i++){
-                let groupId = await getGroupId(groupModel , arrayGroupRole[i].groupName);
-                let roleId = await getRoleId(roleModel , arrayGroupRole[i].roleName);
-                let groupRoleId = await getGroupRoleId(groupRoleModel , groupId , roleId);
-                await userGroupRoleModel.create({userId : userId , groupRoleId : groupRoleId}).then((result)=>{
-                    logger.info('add groupRole to user success : ' + result);
+                try{
+                    let groupId = await getGroupId(groupModel , arrayGroupRole[i].groupName);
+                    let roleId = await getRoleId(roleModel , arrayGroupRole[i].roleName);
+                    let groupRoleId = await getGroupRoleId(groupRoleModel , groupId , roleId);
+                    userGroupRoleModel.create({userId : userId , groupRoleId : groupRoleId}).then((result)=>{
+                        logger.info('add groupRole to user success : ' + result);
+                    }).catch((e)=>{
+                        logger.error('add groupRole to user error: ' + e);
+                        res.json({
+                            message : 'add groupRole to user error',
+                            error : e
+                        });
+                    })
+                }catch(e){
                     res.json({
-                        message : 'add groupRole to user success',
-                        result : result
-                    });
-                }).catch((e)=>{
-                    logger.error('add groupRole to user error: ' + e);
-                    res.json({
-                        message : 'add groupRole to user error',
-                        error : e
-                    });
-                })
+                        error : e,
+                    })
+                }
             }
+            return res.json({
+                message : 'add groupRole to user success',
+            });
         }).catch((e)=>{
             logger.error('destroy userGroupRole error : ' + e);
             res.json({

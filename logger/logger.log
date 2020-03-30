@@ -8658,3 +8658,246 @@ March 30th 2020, 7:13:42 pm '[INFO]': server is running in port 3000
 March 30th 2020, 7:13:42 pm '[INFO]': GET /api/notify/listNotify 200 
 
 March 30th 2020, 7:14:33 pm '[INFO]': server is running in port 3000
+March 30th 2020, 7:14:33 pm '[INFO]': [object Object]
+March 30th 2020, 7:14:33 pm '[INFO]': GET /api/listNotify 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': GET /api/notify/1 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': GET /api/notify/1 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': POST /api/member 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': GET /api/groupRole 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': destroy userGroupRole success : 1
+March 30th 2020, 7:14:33 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:14:33 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:14:33 pm '[ERROR]': add groupRole to user error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:14:33 pm '[ERROR]': destroy userGroupRole error : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:14:33 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': destroy userGroupRole success : 2
+March 30th 2020, 7:14:33 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:14:33 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:14:33 pm '[ERROR]': destroy userGroupRole error : not found group
+March 30th 2020, 7:14:33 pm '[INFO]': destroy userGroupRole success : 1
+March 30th 2020, 7:14:33 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:14:33 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:14:33 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:14:33 pm '[ERROR]': add groupRole to user error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:14:33 pm '[ERROR]': destroy userGroupRole error : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:25:12 pm '[INFO]': server is running in port 3000
+March 30th 2020, 7:25:12 pm '[INFO]': destroy userGroupRole success : 2
+March 30th 2020, 7:25:12 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:25:12 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:25:12 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:25:12 pm '[ERROR]': add groupRole to user error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:25:12 pm '[ERROR]': destroy userGroupRole error : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:29:42 pm '[INFO]': server is running in port 3000
+March 30th 2020, 7:29:42 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 7:29:42 pm '[INFO]': destroy userGroupRole success : 2
+March 30th 2020, 7:29:42 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:29:42 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:29:42 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:29:42 pm '[ERROR]': add groupRole to user error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:29:42 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 30th 2020, 7:29:42 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 30th 2020, 7:29:42 pm '[INFO]': destroy userGroupRole success : 2
+March 30th 2020, 7:29:42 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:29:42 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:29:42 pm '[ERROR]': add groupRole to user error: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:29:42 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 7:38:55 pm '[INFO]': server is running in port 3000
+March 30th 2020, 7:38:55 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 7:38:55 pm '[ERROR]': add groupRole to user error: SequelizeDatabaseError: Data truncated for column 'groupRoleId' at row 1
+March 30th 2020, 7:38:55 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:38:55 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:38:55 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:38:55 pm '[ERROR]': add groupRole to user error: SequelizeDatabaseError: Data truncated for column 'groupRoleId' at row 1
+March 30th 2020, 7:38:55 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:38:55 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:38:55 pm '[ERROR]': add groupRole to user error: SequelizeDatabaseError: Data truncated for column 'groupRoleId' at row 1
+March 30th 2020, 7:38:55 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:50:10 pm '[INFO]': server is running in port 3000
+March 30th 2020, 7:50:10 pm '[INFO]': destroy userGroupRole success : 0
+March 30th 2020, 7:50:10 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:50:10 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:50:10 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:50:10 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 7:50:52 pm '[INFO]': server is running in port 3000
+March 30th 2020, 7:50:52 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 7:50:52 pm '[INFO]': destroy userGroupRole success : 2
+March 30th 2020, 7:50:52 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:50:52 pm '[ERROR]': destroy userGroupRole error : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:50:52 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:50:52 pm '[INFO]': destroy userGroupRole success : 1
+March 30th 2020, 7:50:52 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:50:52 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:50:52 pm '[ERROR]': destroy userGroupRole error : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:50:52 pm '[INFO]': destroy userGroupRole success : 1
+March 30th 2020, 7:50:52 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:50:52 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:50:52 pm '[ERROR]': destroy userGroupRole error : Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+March 30th 2020, 7:50:52 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:50:52 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 7:50:52 pm '[INFO]': destroy userGroupRole success : 2
+March 30th 2020, 7:50:52 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:50:52 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:50:52 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 7:50:52 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 7:50:52 pm '[INFO]': GET /api/member/allAdvance 200 
+
+March 30th 2020, 8:03:08 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:6:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 8:03:35 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:6:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 8:03:45 pm '[ERROR]': uncaughtException: Dialect needs to be explicitly supplied as of v4.0.0
+Error: Dialect needs to be explicitly supplied as of v4.0.0
+    at new Sequelize (C:\Users\Dell\WebstormProjects\web_clb\node_modules\sequelize\lib\sequelize.js:265:13)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\connectDatabase.js:6:17)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at Object.<anonymous> (C:\Users\Dell\WebstormProjects\web_clb\db\index.js:1:31)
+    at Module._compile (internal/modules/cjs/loader.js:777:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:788:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:840:10)
+    at internal/main/run_main_module.js:17:11
+March 30th 2020, 8:03:56 pm '[INFO]': server is running in port 3000
+March 30th 2020, 8:03:56 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 8:03:56 pm '[INFO]': POST /api/refreshToken 200 
+
+March 30th 2020, 8:03:56 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 8:03:56 pm '[INFO]': GET /api/listNotify 200 
+
+March 30th 2020, 8:03:56 pm '[INFO]': [object Object]
+March 30th 2020, 8:03:56 pm '[INFO]': GET /api/listNotify 200 
+
+March 30th 2020, 8:03:56 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 8:03:56 pm '[ERROR]': create notify error : SequelizeUniqueConstraintError: Validation error
+March 30th 2020, 8:03:56 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 8:03:56 pm '[INFO]': [object Object]
+March 30th 2020, 8:03:56 pm '[INFO]': GET /api/listNotify 200 
+
+March 30th 2020, 8:03:56 pm '[ERROR]': create notify error : SequelizeUniqueConstraintError: Validation error
+March 30th 2020, 8:03:56 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 8:03:56 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 8:10:49 pm '[INFO]': server is running in port 3000
+March 30th 2020, 8:11:14 pm '[INFO]': server is running in port 3000
+March 30th 2020, 8:11:14 pm '[INFO]': GET /api/notify/1 200 
+
+March 30th 2020, 8:11:14 pm '[ERROR]': get notify error : SequelizeEagerLoadingError: User is not associated to Notify!
+March 30th 2020, 8:11:14 pm '[INFO]': GET /api/notify/1 200 
+
+March 30th 2020, 8:11:14 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 8:11:14 pm '[ERROR]': create notify error : SequelizeUniqueConstraintError: Validation error
+March 30th 2020, 8:11:14 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 8:12:31 pm '[INFO]': server is running in port 3000
+March 30th 2020, 9:17:55 pm '[INFO]': server is running in port 3000
+March 30th 2020, 9:18:46 pm '[INFO]': server is running in port 3000
+March 30th 2020, 9:18:46 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 9:18:46 pm '[INFO]': POST /api/refreshToken 200 
+
+March 30th 2020, 9:18:46 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 9:18:46 pm '[ERROR]': create notify error : SequelizeUniqueConstraintError: Validation error
+March 30th 2020, 9:18:46 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 9:27:53 pm '[INFO]': server is running in port 3000
+March 30th 2020, 9:30:05 pm '[INFO]': server is running in port 3000
+March 30th 2020, 9:30:05 pm '[ERROR]': create notify error : SequelizeDatabaseError: Table 'kitClub.Notify' doesn't exist
+March 30th 2020, 9:30:05 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 9:31:10 pm '[INFO]': server is running in port 3000
+March 30th 2020, 9:31:10 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 9:31:10 pm '[ERROR]': create notify error : SequelizeUniqueConstraintError: Validation error
+March 30th 2020, 9:31:10 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 9:35:55 pm '[INFO]': server is running in port 3000
+March 30th 2020, 9:36:28 pm '[INFO]': server is running in port 3000
+March 30th 2020, 9:36:28 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 9:36:28 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 9:37:28 pm '[INFO]': server is running in port 3000
+March 30th 2020, 9:37:28 pm '[INFO]': POST /api/notify 200 
+
+March 30th 2020, 9:37:28 pm '[INFO]': GET /api/listNotify 200 
+
+March 30th 2020, 9:37:28 pm '[INFO]': [object Object]
+March 30th 2020, 9:37:28 pm '[INFO]': GET /api/listNotify 200 
+
+March 30th 2020, 9:59:15 pm '[INFO]': server is running in port 3000
+March 30th 2020, 10:06:52 pm '[INFO]': server is running in port 3000
