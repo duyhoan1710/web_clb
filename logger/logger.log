@@ -8910,3 +8910,45 @@ March 30th 2020, 10:08:03 pm '[INFO]': POST /api/refreshToken 200
 
 March 30th 2020, 10:08:03 pm '[INFO]': GET /api/groupRole 200 
 
+March 30th 2020, 10:14:07 pm '[INFO]': server is running in port 3000
+March 30th 2020, 10:26:35 pm '[INFO]': server is running in port 3000
+March 30th 2020, 10:33:56 pm '[INFO]': server is running in port 3000
+March 30th 2020, 10:33:56 pm '[INFO]': POST /api/member 200 
+
+March 30th 2020, 10:33:56 pm '[INFO]': POST /api/login 200 
+
+March 30th 2020, 10:33:56 pm '[ERROR]': create user error : SequelizeUniqueConstraintError: Validation error
+March 30th 2020, 10:33:56 pm '[INFO]': POST /api/member 200 
+
+March 30th 2020, 10:33:56 pm '[INFO]': POST /api/member 200 
+
+March 30th 2020, 10:33:56 pm '[INFO]': POST /api/login 200 
+
+March 30th 2020, 10:33:56 pm '[INFO]': destroy userGroupRole success : 3
+March 30th 2020, 10:33:56 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 10:33:56 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 10:33:56 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 10:33:56 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 30th 2020, 10:33:56 pm '[INFO]': destroy userGroupRole success : 1
+March 30th 2020, 10:33:56 pm '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 30th 2020, 10:33:56 pm '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 30th 2020, 10:33:56 pm '[INFO]': GET /api/user/allBasic 200 
+
+March 31st 2020, 1:09:48 am '[INFO]': server is running in port 3000
+March 31st 2020, 1:09:48 am '[INFO]': POST /api/refreshToken 200 
+
+March 31st 2020, 1:09:48 am '[INFO]': POST /api/login 200 
+
+March 31st 2020, 1:09:48 am '[INFO]': POST /api/schedule/guest 200 
+
+March 31st 2020, 1:09:48 am '[INFO]': GET /api/schedule 200 
+
+March 31st 2020, 1:09:48 am '[INFO]': POST /api/login 200 
+
+March 31st 2020, 1:09:48 am '[INFO]': GET /api/schedule 200 
+
+March 31st 2020, 1:19:04 am '[INFO]': server is running in port 3000
