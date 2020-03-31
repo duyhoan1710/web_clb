@@ -87,5 +87,67 @@ module.exports = {
                 error : e
             });
         }
+    },
+    updatePersonalSchedule : (req , res , next)=>{
+        // let arr = [
+        //        {
+        //            time : time,
+        //            subject : subjectName,
+        //            address : address,
+        //            lesson : lesson
+        //        },
+        //        {
+        //            time : time,
+        //            subject : subjectName,
+        //            address : address,
+        //            lesson : lesson
+        //        }
+        // ]
+        let userId = req.user.id;
+        let arraySchedule = req.body.arraySchedule;
+        userModel.findOne({where : {id : userId}}).then((user)=>{
+            if(!user){
+                res.json({
+                    status : false,
+                    message : 'update schedule first'
+                });
+            }else{
+                for(let i = 0 ; i < arraySchedule.length ; i++){
+                    if(user.dataJson[arraySchedule[i].time]){
+                        let obj = {
+                            'subject' : arraySchedule[i].subject,
+                            'address' : arraySchedule[i].address,
+                            'lesson' : arraySchedule[i].lesson
+                        };
+                        user.dataJson[arraySchedule[i].time].push(obj);
+                    }else{
+                        let obj = {};
+                        obj = {
+                            'subject' : arraySchedule[i].subject,
+                            'address' : arraySchedule[i].address,
+                            'lesson' : arraySchedule[i].lesson
+                        };
+                        user.dataJson[arraySchedule[i].time] = [];
+                        user.dataJson[arraySchedule[i].time].push(obj);
+                    }
+                }
+                userModel.update({dataJson : user.dataJson} , {where : {id : userId}}).then((result)=>{
+                    res.json({
+                        status : true,
+                        result : result
+                    });
+                }).catch((e)=>{
+                    res.json({
+                        status : false,
+                        error : e,
+                    })
+                })
+            }
+        }).catch((e)=>{
+            res.json({
+                status : false,
+                error : e,
+            })
+        })
     }
 };
