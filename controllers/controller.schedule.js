@@ -113,14 +113,15 @@ module.exports = {
                 });
             }else{
                 for(let i = 0 ; i < arraySchedule.length ; i++){
-                    arraySchedule[i].time = new Date(arraySchedule[i].time).getTime();
-                    if(user.dataJson[arraySchedule[i].time]){
+                    let millisecond = new Date(arraySchedule[i].time).getTime();
+                    console.log(millisecond);
+                    if(user.dataJson[millisecond]){
                         let obj = {
                             'subject' : arraySchedule[i].subject,
                             'address' : arraySchedule[i].address,
                             'lesson' : arraySchedule[i].lesson
                         };
-                        user.dataJson[arraySchedule[i].time].push(obj);
+                        user.dataJson[millisecond].push(obj);
                     }else{
                         let obj = {};
                         obj = {
@@ -128,8 +129,8 @@ module.exports = {
                             'address' : arraySchedule[i].address,
                             'lesson' : arraySchedule[i].lesson
                         };
-                        user.dataJson[arraySchedule[i].time] = [];
-                        user.dataJson[arraySchedule[i].time].push(obj);
+                        user.dataJson[millisecond] = [];
+                        user.dataJson[millisecond].push(obj);
                     }
                 }
                 userModel.update({dataJson : user.dataJson} , {where : {id : userId}}).then((result)=>{
