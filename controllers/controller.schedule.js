@@ -113,6 +113,7 @@ module.exports = {
                 });
             }else{
                 for(let i = 0 ; i < arraySchedule.length ; i++){
+                    arraySchedule[i].time = new Date(arraySchedule[i].time).getTime();
                     if(user.dataJson[arraySchedule[i].time]){
                         let obj = {
                             'subject' : arraySchedule[i].subject,
