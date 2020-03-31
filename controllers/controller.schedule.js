@@ -8,7 +8,7 @@ let getDataJson = require('./schedule/schedule.handlingData');
 
 let sleep = ()=>{
     return new Promise((resolve)=>{
-        setTimeout(resolve , 0);
+        setTimeout(resolve , 100);
     });
 };
 
