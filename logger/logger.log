@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 March 16th 2020, 12:29:22 pm '[INFO]': server is running in port 3000
 March 16th 2020, 12:29:22 pm '[INFO]': GET / 304 
 
@@ -13806,3 +13807,6 @@ Error: Dialect needs to be explicitly supplied as of v4.0.0
     at Object.<anonymous> (/root/web_clb/middleware/authenticate/isAuth.js:4:19)
     at Module._compile (internal/modules/cjs/loader.js:778:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+=======
+March 31st 2020, 10:39:38 am '[INFO]': server is running in port 3000
+>>>>>>> f384ae774a2860915494487305cab067ccac854c

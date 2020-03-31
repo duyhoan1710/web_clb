@@ -42,6 +42,9 @@ module.exports = {
         {permissionName: 'confirmNews' , description : ''},
 
 
+        // only admin
+
+
         //
     ],
     groupRole : {
