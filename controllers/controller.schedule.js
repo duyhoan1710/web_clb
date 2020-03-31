@@ -52,6 +52,7 @@ module.exports = {
                 })
             }).catch((e)=>{
                 logger.error(e);
+                console.log(e);
                 res.json({
                     message : 'update dataJson error',
                     error : e,
