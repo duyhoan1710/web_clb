@@ -1,0 +1,87 @@
+March 31st 2020, 11:07:28 am '[INFO]': server is running in port 3000
+March 31st 2020, 11:09:34 am '[INFO]': server is running in port 3000
+March 31st 2020, 11:09:54 am '[INFO]': server is running in port 3000
+March 31st 2020, 11:11:09 am '[INFO]': server is running in port 3000
+March 31st 2020, 11:22:09 am '[INFO]': server is running in port 3000
+March 31st 2020, 11:22:09 am '[INFO]': POST /api/login 200 
+
+March 31st 2020, 11:22:09 am '[INFO]': POST /api/member 200 
+
+March 31st 2020, 11:22:09 am '[INFO]': GET /api/user/profile 200 
+
+March 31st 2020, 11:22:09 am '[INFO]': POST /api/login 200 
+
+March 31st 2020, 11:22:09 am '[INFO]': GET /api/user/profile 200 
+
+March 31st 2020, 11:22:09 am '[INFO]': PUT /api/user/password 200 
+
+March 31st 2020, 11:22:09 am '[INFO]': GET /api/user/allBasic 200 
+
+March 31st 2020, 11:22:09 am '[INFO]': GET /api/user/listBasic/2 404 
+
+March 31st 2020, 11:22:09 am '[ERROR]': get list user basic error : Error: WHERE parameter "groupId" has invalid "undefined" value
+March 31st 2020, 11:22:09 am '[INFO]': GET /api/user/listBasic 200 
+
+March 31st 2020, 11:22:09 am '[ERROR]': get list user basic error : Error: WHERE parameter "groupId" has invalid "undefined" value
+March 31st 2020, 11:22:09 am '[INFO]': GET /api/user/listBasic 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': server is running in port 3000
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/user/listBasic/1 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/member/allAdvance 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/member/allAdvance 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/member/listAdvance/2 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/member/profile/1 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': PUT /api/member 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': destroy userGroupRole success : 1
+March 31st 2020, 11:39:16 am '[INFO]': PUT /api/member/updateGroupRole 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': add groupRole to user success : [object SequelizeInstance:UserGroupRole]
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/schedule/guest 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/schedule 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/notify/1 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': [object Object]
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/listNotify 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/notify 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': PUT /api/notify 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': DELETE /api/notify 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/groupRole 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/login 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/schedule/guest 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/schedule/guest 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/login 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/login 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/schedule 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': GET /api/schedule 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/schedule/guest 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/schedule/guest 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/schedule/guest 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/schedule/guest 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/schedule/guest 200 
+
+March 31st 2020, 11:39:16 am '[INFO]': POST /api/schedule/guest 200 
+
