@@ -6,6 +6,7 @@ module.exports = (fileName)=>{
     const sheet_name_list = workbook.SheetNames;
     let data = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
     let objectData = {};
+    console.log(data);
     let regex_get_time = /Từ (.*) đến (.*):\s*(Thứ (.*) tiết (.*) tại (.*)\s*){1,6}/g;
     for(let i = 8 ; i< data.length-5 ; i++){
         let time_address = [...data[i]['__EMPTY_6'].matchAll(regex_get_time)];
