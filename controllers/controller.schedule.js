@@ -82,6 +82,7 @@ module.exports = {
                 dataJson : dataJson
             })
         }catch (e) {
+            console.log(e);
             res.json({
                 message : 'get dataJson schedule error',
                 error : e
