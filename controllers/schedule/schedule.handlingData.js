@@ -9,7 +9,7 @@ module.exports = (fileName)=>{
     let regex_get_time = /Từ (.*) đến (.*):\s*(Thứ (.*) tiết (.*) tại (.*)\s*){1,6}/gi;
     for(let i = 8 ; i< data.length-5 ; i++){
         let string = data[i]['__EMPTY_6'].toString();
-        console.log(string.matchAll(regex_get_time));
+        console.log(string);
         let time_address = [...string.matchAll(regex_get_time)];
         console.log(time_address);
         time_address.forEach(temp =>{
