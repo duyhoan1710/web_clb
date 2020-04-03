@@ -6,10 +6,10 @@ module.exports = (fileName)=>{
     const sheet_name_list = workbook.SheetNames;
     let data = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
     let objectData = {};
-    let regex_get_time = /Từ (.*) đến (.*):\s*(Thứ (.*) tiết (.*) tại (.*)\s*){1,6}/g;
+    let regex_get_time = /Từ (.*) đến (.*):\s*(Thứ (.*) tiết (.*) tại (.*)\s*){1,6}/gi;
     for(let i = 8 ; i< data.length-5 ; i++){
-        console.log(data[i]['__EMPTY_6']);
-        // console.log(...data[i]['__EMPTY_6'].matchAll(regex_get_time));
+        let string = data[i]['__EMPTY_6'].toString();
+        console.log(...string.matchAll(regex_get_time));
         let time_address = [...data[i]['__EMPTY_6'].matchAll(regex_get_time)];
         console.log(time_address);
         time_address.forEach(temp =>{
