@@ -10,7 +10,8 @@ module.exports = (fileName)=>{
     for(let i = 8 ; i< data.length-5 ; i++){
         let string = data[i]['__EMPTY_6'].toString();
         console.log(string);
-        let time_address = [...string.matchAll(regex_get_time)];
+        let time_address = [...regex_get_time[Symbol.matchAll](string)];
+        // let result = [...re[Symbol.matchAll](str)];
         console.log(time_address);
         time_address.forEach(temp =>{
             // đổi ngày tháng sang giây
