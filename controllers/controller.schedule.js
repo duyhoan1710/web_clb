@@ -78,12 +78,14 @@ module.exports = {
             await sleep();
             let dataJson = getDataJson(studentAccount);
             res.json({
+                status : true,
                 message : 'get dataJson schedule success',
                 dataJson : dataJson
             })
         }catch (e) {
             console.log(e);
             res.json({
+                status : false,
                 message : 'get dataJson schedule error',
                 error : e
             });
