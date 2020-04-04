@@ -2,6 +2,11 @@ const XLSX = require('xlsx');
 let path = require('path');
 
 module.exports = (fileName)=>{
+    let re = /[0-9]+/g;
+    let str = '2016-01-02|2019-03-07';
+    let result = [...re[Symbol.matchAll](str)];
+
+    console.log(result);
     const workbook = XLSX.readFile(path.resolve(`${__dirname}/files` ,`${fileName}.xls`));
     const sheet_name_list = workbook.SheetNames;
     let data = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
@@ -10,7 +15,7 @@ module.exports = (fileName)=>{
     for(let i = 8 ; i< data.length-5 ; i++){
         let string = data[i]['__EMPTY_6'].toString();
         console.log(string);
-        let time_address = string.matchAll(regex_get_time);
+        let time_address = [...string.matchAll(regex_get_time)];
         // let result = [...re[Symbol.matchAll](str)];
         console.log(time_address);
         time_address.forEach(temp =>{
