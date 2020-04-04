@@ -4,9 +4,9 @@ let path = require('path');
 module.exports = (fileName)=>{
     let re = /[0-9]+/g;
     let str = '2016-01-02|2019-03-07';
-    let result = [...re[Symbol.matchAll](str)];
-
+    let result = [...str.matchAll(re)];
     console.log(result);
+
     const workbook = XLSX.readFile(path.resolve(`${__dirname}/files` ,`${fileName}.xls`));
     const sheet_name_list = workbook.SheetNames;
     let data = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
