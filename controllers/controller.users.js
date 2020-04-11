@@ -45,12 +45,14 @@ module.exports = {
         }).then((users)=>{
             let dataUser = mergeDataUser(users);
             res.json({
+                status: true,
                 message : 'get user success',
                 user : dataUser
             })
         }).catch((e)=>{
             logger.error('get user error : ' + e );
             res.json({
+                status: false,
                 message : 'get user error',
                 error : e
             });
@@ -66,6 +68,7 @@ module.exports = {
             if(err) {
                 logger.error('hash password error : ' + err );
                 res.json({
+                    status: false,
                     message : 'hash password error',
                     error : err
                 });
@@ -75,6 +78,7 @@ module.exports = {
                 let refreshToken = await jwtHelper.generateToken(req.user , config.jwt.refreshToken_secret , config.jwt.timeLifeRefreshToken);
                 userModel.update({password : hashPassword , accessToken : accessToken , refreshToken : refreshToken} ,{where: {id : userId ,username : username}}).then((result)=>{
                     res.json({
+                        status: true,
                         message : 'update user success',
                         result : result,
                         accessToken : accessToken,
@@ -83,6 +87,7 @@ module.exports = {
                 }).catch((e)=>{
                     logger.error('update user error : ' + e);
                     res.json({
+                        status: false,
                         message : 'update user error',
                         error : e
                     });
@@ -105,6 +110,7 @@ module.exports = {
             userGroupRoleModel.findOne({where : {userId : userId}}).then(async (user)=>{
                 if(user){
                     res.json({
+                        status: true,
                         message : 'out group success',
                     })
                 }else{
@@ -113,11 +119,13 @@ module.exports = {
                     let groupRoleId = await getGroupRoleId(groupRoleModel , groupId , roleId);
                     await userGroupRoleModel.create({userId : userId , groupRoleId : groupRoleId}).then((userGroupRole)=>{
                         res.json({
+                            status: true,
                             message : 'out group success',
                         });
                     }).catch((e)=>{
                         logger.error('out group error : ' + e);
                         res.json({
+                            status: false,
                             message : 'out group error ',
                             error : e
                         });
@@ -126,11 +134,13 @@ module.exports = {
             }).catch((e)=>{
                 logger.error(e);
                 res.json({
+                    status: false,
                     error : e
                 })
             })
         }).catch((e)=>{
             res.json({
+                status: false,
                 message : 'error',
                 error : e
             })
@@ -157,12 +167,14 @@ module.exports = {
         }).then((users)=>{
             let dataUser = mergeDataUser(users);
             res.json({
+                status: true,
                 message : 'get user success',
                 user : dataUser
             })
         }).catch((e)=>{
             logger.error('get user error : ' + e );
             res.json({
+                status: false,
                 message : 'get user error',
                 error : e
             });
@@ -175,6 +187,7 @@ module.exports = {
             if(err) {
                 logger.error('hash password error : ' + err );
                 res.json({
+                    status: false,
                     message : 'hash password error',
                     error : err
                 });
@@ -186,6 +199,7 @@ module.exports = {
                     let groupRoleId = await getGroupRoleId(groupRoleModel , groupId , roleId);
                     await userGroupRoleModel.create({userId : user.id , groupRoleId : groupRoleId}).then((userGroupRole)=>{
                         res.json({
+                            status: true,
                             message : 'create user success',
                             user : user,
                             userGroupRole : userGroupRole,
@@ -195,6 +209,7 @@ module.exports = {
                     }).catch((e)=>{
                         logger.error('create userGroupRole error : ' + e);
                         res.json({
+                            status: false,
                             message : 'create userGroupRole error ',
                             error : e
                         });
@@ -202,6 +217,7 @@ module.exports = {
                 }).catch((e)=>{
                     logger.error('create user error : ' + e);
                     res.json({
+                        status: false,
                         message : 'create user error ',
                         error : e
                     });
@@ -218,6 +234,7 @@ module.exports = {
             if(err) {
                 logger.error('hash password error : ' + err );
                 res.json({
+                    status: false,
                     message : 'hash password error',
                     error : err
                 });
@@ -226,6 +243,7 @@ module.exports = {
 
                 userModel.update(body ,{where: {id : userId }}).then((result)=>{
                     res.json({
+                        status: true,
                         message : 'update user success',
                         result : result
                     });
@@ -233,6 +251,7 @@ module.exports = {
                     console.log(e);
                     logger.error('update user error : ' + e);
                     res.json({
+                        status: false,
                         message : 'update user error',
                         error : e
                     });
@@ -247,6 +266,7 @@ module.exports = {
 
         userModel.destroy({where: {id : userId }}).then((result)=>{
             res.json({
+
                 message : 'delete user success',
                 result : result
             });
@@ -285,12 +305,14 @@ module.exports = {
                 ]
             }).then((listUser)=>{
                 res.json({
+                    status: true,
                     message : 'get user by groupRoleId success',
                     listUser : listUser
                 })
             }).catch((e)=>{
                 logger.error('get user by groupRoleId error : ' + e );
                 res.json({
+                    status: false,
                     message : 'get user by groupRoleId',
                     error : e
                 });
@@ -298,6 +320,7 @@ module.exports = {
         }).catch((e)=>{
             logger.error('get list user basic error : ' + e);
             res.json({
+                status: false,
                 message : 'get list user basic error',
                 error : e
             });
@@ -323,12 +346,14 @@ module.exports = {
             ]
         }).then((listUser)=>{
             res.json({
+                status: true,
                 message : 'get list user success',
                 listUser : listUser
             })
         }).catch((e)=>{
             logger.error('get list user error : ' + e);
             res.json({
+                status: false,
                 message : 'get list user error',
                 error : e
             });
@@ -361,12 +386,14 @@ module.exports = {
                 ]
             }).then((listUser)=>{
                 res.json({
+                    status: true,
                     message : 'get user by groupRoleId success',
                     listUser : listUser
                 })
             }).catch((e)=>{
                 logger.error('get user by groupRoleId error : ' + e );
                 res.json({
+                    status: false,
                     message : 'get user by groupRoleId',
                     error : e
                 });
@@ -374,6 +401,7 @@ module.exports = {
         }).catch((e)=>{
             logger.error('get list user basic error : ' + e);
             res.json({
+                status: false,
                 message : 'get list user basic error',
                 error : e
             });
@@ -399,12 +427,14 @@ module.exports = {
             ]
         }).then((listUser)=>{
             res.json({
+                status: true,
                 message : 'get all user success',
                 listUser : listUser
             })
         }).catch((e)=>{
             logger.error('get all user error : ' + e);
             res.json({
+                status: false,
                 message : 'get list user error',
                 error : e
             });
@@ -430,22 +460,26 @@ module.exports = {
                     }).catch((e)=>{
                         logger.error('add groupRole to user error: ' + e);
                         res.json({
+                            status: false,
                             message : 'add groupRole to user error',
                             error : e
                         });
                     })
                 }catch(e){
                     res.json({
+                        status: false,
                         error : e,
                     })
                 }
             }
             return res.json({
+                status: true,
                 message : 'add groupRole to user success',
             });
         }).catch((e)=>{
             logger.error('destroy userGroupRole error : ' + e);
             res.json({
+                status: false,
                 message : 'destroy userGroupRole error',
                 error : e
             })

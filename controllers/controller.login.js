@@ -12,6 +12,7 @@ module.exports = {
                 if(err) {
                     logger.error('find user error : ' + err);
                     res.json({
+                        status: false,
                         error : err
                     });
                 }else{
@@ -54,6 +55,7 @@ module.exports = {
                             let refreshToken = await jwtHelper.generateToken(dataUser , config.jwt.refreshToken_secret , config.jwt.timeLifeRefreshToken);
                             userModel.update({accessToken : accessToken , refreshToken : refreshToken},{where : {id : user.id}}).then((user)=>{
                                 res.json({
+                                    status: true,
                                     message : 'login success',
                                     user : dataUser,
                                     accessToken : accessToken,
@@ -61,6 +63,7 @@ module.exports = {
                                 });
                             }).catch((e)=>{
                                 res.json({
+                                    status: false,
                                     message : 'update token error',
                                     error : e
                                 })
@@ -68,12 +71,14 @@ module.exports = {
                         }).catch((e)=>{
                             logger.error('login error : ' + e );
                             res.json({
+                                status: false,
                                 message :'login error',
                                 error : e
                             });
                         })
                     }else{
                         res.json({
+                            status: false,
                             message : 'login false'
                         })
                     }
@@ -85,10 +90,12 @@ module.exports = {
         let userId = req.user.id;
         userModel.update({accessToken : null , refreshToken : null} , {where : {id : userId}}).then((result)=>{
             res.json({
+                status: true,
                 message : 'logout success'
             })
         }).catch((e)=>{
             res.json({
+                status: false,
                 message : 'logout false',
                 error : e
             })

@@ -18,17 +18,20 @@ module.exports = {
         userModel.findOne({where : {id : userId} , attributes : ['dataJson']}).then((schedule)=>{
             if(schedule.dataJson){
                 res.json({
+                    status: true,
                     message : 'get data schedule success',
                     schedule : schedule
                 });
             }else{
                 res.json({
+                    status: false,
                     message : 'chưa update studentAccount , hãy update trước'
                 });
             }
         }).catch((e)=>{
             logger.error('get data schedule error : ' + e );
             res.json({
+                status: false,
                 message : 'get data schedule error',
                 error : e
             });
@@ -47,6 +50,7 @@ module.exports = {
             let dataJson = getDataJson(studentAccount);
             userModel.update({studentAccount : studentAccount , studentPassword : studentPassword , dataJson : dataJson}, {where : {id : userId}} ).then((result)=>{
                 res.json({
+                    status: true,
                     message : 'update dataJson schedule success',
                     dataJson : dataJson
                 })
@@ -54,6 +58,7 @@ module.exports = {
                 logger.error(e);
                 console.log(e);
                 res.json({
+                    status:false,
                     message : 'update dataJson error',
                     error : e,
                 })
@@ -61,6 +66,7 @@ module.exports = {
         }catch (e) {
             logger.error(e);
             res.json({
+                status: false,
                 message : 'update dataJson schedule error',
                 error : e
             });

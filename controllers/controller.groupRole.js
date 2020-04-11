@@ -24,11 +24,13 @@ module.exports = {
             ]
         }).then((groupRole)=>{
             res.json({
+                status: true,
                 message : 'get success',
                 groupRole : groupRole
             })
         }).catch((e)=>{
             res.json({
+                status: false,
                 error : e
             });
         });

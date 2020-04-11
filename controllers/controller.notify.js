@@ -20,12 +20,14 @@ module.exports = {
             ]
         }).then((notify)=>{
             res.json({
+                status: true,
                 message : 'get notify success',
                 notify : notify
             })
         }).catch((e)=>{
             logger.error('get notify error : ' + e);
             res.json({
+                status: false,
                 message : 'get notify error',
                 error : e
             })
@@ -50,12 +52,14 @@ module.exports = {
             ]
         }).then((notify)=>{
             res.json({
+                status: true,
                 message : 'get notify success',
                 notify : notify
             })
         }).catch((e)=>{
             logger.error('get notify error : ' + e);
             res.json({
+                status: false,
                 message : 'get notify error',
                 error : e
             })
@@ -67,12 +71,14 @@ module.exports = {
         let body = req.body;
         notifyModel.create({authorId : userId , groupId : body.groupId, title : body.title , content : body.content}).then((notify)=>{
             res.json({
+                status: true,
                 message : 'create notify success',
                 notify : notify
             })
         }).catch((e)=>{
             logger.error('create notify error : ' + e );
             res.json({
+                status: false,
                 message : 'create notify error',
                 error : e
             });
@@ -84,12 +90,14 @@ module.exports = {
         let body = req.body;
         notifyModel.update({title : body.title , content : body.content} , {where : {authorId : userId , id : body.notifyId}}).then((result)=>{
             res.json({
+                status: true,
                 message : 'update notify success',
                 notify : result
             })
         }).catch((e)=>{
             logger.error('update notify error : ' + e );
             res.json({
+                status: false,
                 message : 'update notify error',
                 error : e
             });
@@ -100,12 +108,14 @@ module.exports = {
         let body = req.body;
         notifyModel.destroy({where : {authorId : userId , id : body.notifyId}}).then((result)=>{
             res.json({
+                status: true,
                 message : 'delete notify success',
                 notify : result
             })
         }).catch((e)=>{
             logger.error('delete notify error : ' + e );
             res.json({
+                status: false,
                 message : 'delete notify error',
                 error : e
             });
