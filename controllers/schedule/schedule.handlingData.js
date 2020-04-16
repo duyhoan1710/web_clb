@@ -27,6 +27,7 @@ module.exports = (fileName)=>{
                         if(parseInt(time[2]) === getDay + 1){
                             let obj = {};
                             obj[millisecond] = {
+                                'school': true,
                                 'subject' : data[i]['__EMPTY_4'],
                                 'address' : time[4],
                                 'lesson' : time[3]
@@ -45,6 +46,7 @@ module.exports = (fileName)=>{
                     if(parseInt(temp[4]) === getDay + 1){
                         let obj = {};
                         obj[millisecond] = {
+                            'school': true,
                             'subject' : data[i]['__EMPTY_4'],
                             'address' : temp[6],
                             'lesson' : temp[5]

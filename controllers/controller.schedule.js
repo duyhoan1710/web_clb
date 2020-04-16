@@ -126,6 +126,7 @@ module.exports = {
                     console.log(millisecond);
                     if(user.dataJson[millisecond]){
                         let obj = {
+                            'school': false,
                             'subject' : arraySchedule[i].subject,
                             'address' : arraySchedule[i].address,
                             'lesson' : arraySchedule[i].lesson
@@ -134,6 +135,7 @@ module.exports = {
                     }else{
                         let obj = {};
                         obj = {
+                            'school': false,
                             'subject' : arraySchedule[i].subject,
                             'address' : arraySchedule[i].address,
                             'lesson' : arraySchedule[i].lesson
