@@ -261,7 +261,7 @@ module.exports = {
         });
     },
     getUnActiveMember: (req, res, next)=>{
-        userModel.getAll({where: {status : false }}).then((result)=>{
+        userModel.findAll({where: {status : false }}).then((result)=>{
             res.json({
                 status: true,
                 message : 'get unActive user success',
