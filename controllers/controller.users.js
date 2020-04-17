@@ -227,7 +227,7 @@ module.exports = {
     },
     updateMember : (req ,res , next )=>{
         // key : username , id
-        // password , email , phone , fullName
+        // password , email , phone , fullName, status
         let body = req.body;
         let userId = req.body.id;
         bcrypt.hash(body.password , parseInt(config.bcrypt.saltRounds) , (err , hashPassword)=>{
@@ -239,8 +239,9 @@ module.exports = {
                     error : err
                 });
             }else{
-                body.password = hashPassword;
-
+                if(body.password){
+                    body.password = hashPassword;
+                }
                 userModel.update(body ,{where: {id : userId }}).then((result)=>{
                     res.json({
                         status: true,
@@ -259,21 +260,19 @@ module.exports = {
             }
         });
     },
-    deleteMember : (req ,res , next )=>{
-        // key : username , id
-        // password , email , phone , fullName
-        let userId = req.body.userId;
-
-        userModel.destroy({where: {id : userId }}).then((result)=>{
+    getUnActiveMember: (req, res, next)=>{
+        userModel.getAll({where: {status : false }}).then((result)=>{
             res.json({
-
-                message : 'delete user success',
+                status: true,
+                message : 'get unActive user success',
                 result : result
             });
-        }).catch((e) =>{
-            logger.error('delete user error : ' + e);
+        }).catch((e)=>{
+            console.log(e);
+            logger.error('get unActive user error : ' + e);
             res.json({
-                message : 'delete user error',
+                status: false,
+                message : 'get unActive user error',
                 error : e
             });
         });

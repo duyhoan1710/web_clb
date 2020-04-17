@@ -10,7 +10,8 @@ module.exports = (app) =>{
     app.delete('/api/user/outGroup' , controllerUsers.outGroup);
     app.get('/api/member/profile/:userId' , controllerUsers.getMember);
     //advance
-
+    app.get('/api/member/unActive' , authorizeUser('createMember') , controllerUsers.getUnActiveMember);
+    app.post('/api/member' , authorizeUser('createMember') , controllerUsers.createMember);
     app.post('/api/member' , authorizeUser('createMember') , controllerUsers.createMember);
     app.put('/api/member' , authorizeUser('updateMember'), controllerUsers.updateMember);
     app.get('/api/member/listAdvance/:groupId' , authorizeUser('getListAdvanceProfileMember') , controllerUsers.getListMemberAdvance);

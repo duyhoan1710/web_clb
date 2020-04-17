@@ -65,6 +65,12 @@ module.exports = (sequelize , Sequelize)=>{
             field : 'dataJson',
             allowNull : true
         },
+        status: {
+            type: Sequelize.Boolean,
+            allowNull: false,
+            defaultValue: true,
+            field: 'status'
+        },
         createAt : {
             type : Sequelize.DATE,
             allowNull : false,
