@@ -7,7 +7,7 @@ module.exports = {
     post : (req , res , next ) =>{
         // username , password
         let body = req.body;
-        userModel.findOne({where : {username : body.username}}).then((user)=>{
+        userModel.findOne({where : {username : body.username, status: true}}).then((user)=>{
             bcrypt.compare(body.password , user.password , (err , result)=>{
                 if(err) {
                     logger.error('find user error : ' + err);
