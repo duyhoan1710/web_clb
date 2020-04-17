@@ -5,11 +5,26 @@ let getCookies = require('./schedule/schedule.getCookie');
 let loginWithCookieAndGetElement = require('./schedule/schedule.loginWithCookieAndGetElement');
 let createFileXlS = require('./schedule/schedule.createFileXLS');
 let getDataJson = require('./schedule/schedule.handlingData');
-
 let sleep = ()=>{
     return new Promise((resolve)=>{
         setTimeout(resolve , 100);
     });
+};
+
+let setUpArray = () => {
+    let arrayLesson = ["1,2,3","4,5,6","7,8,9","10,11,12","13,14,15,16"];
+    let newObjectHasMeeting = {};
+    let date = new Date().getDate();
+    let month = new Date().getMonth();
+    let year = new Date().getFullYear();
+    let millisecond = new Date(year+ '/' + (month+ 1) + '/' + date).getTime();
+    for(let i = millisecond; i <= millisecond + 60*60*24*15*1000; i+= 60*60*24*1000 ){
+        newObjectHasMeeting[i] = {};
+        for(let j = 0; j< arrayLesson.length; j++){
+            newObjectHasMeeting[i][arrayLesson[j]] = [];
+        }
+    }
+    return newObjectHasMeeting;
 };
 
 module.exports = {
@@ -162,5 +177,44 @@ module.exports = {
                 error : e,
             })
         })
+    },
+    getMeeting: (req,res,next)=>{
+        userModel.findAll({
+            where: {},
+            attributes : ['fullName','dataJson']
+        }).then(listUser => {
+            let newObjectHasMeeting = setUpArray();
+            let date = new Date().getDate();
+            let month = new Date().getMonth();
+            let year = new Date().getFullYear();
+            let millisecond = new Date(year+ '/' + (month+ 1) + '/' + date).getTime();
+            console.log(millisecond);
+            let arrayLesson = ["1,2,3","4,5,6","7,8,9","10,11,12","13,14,15,16"];
+            for(let i = 0; i < listUser.length; i++){
+                if(listUser[i].dataJson){
+                    for(let j = millisecond; j <= millisecond + 60*60*24*15*1000; j+= 60*60*24*1000 ){
+                        if(listUser[i].dataJson[j]){
+                            for(let countOfLesson = 0 ; countOfLesson < listUser[i].dataJson[j].length; countOfLesson ++ ){
+                                arrayLesson.forEach(lesson => {
+                                    if(listUser[i].dataJson[j][countOfLesson].lesson.indexOf(lesson) !== -1){
+                                        newObjectHasMeeting[j][lesson].push(listUser[i].fullName);
+                                    }
+                                })
+                            }
+                        }
+                    }
+                }
+            }
+            res.json({
+                status: true,
+                data: newObjectHasMeeting
+            })
+        }).catch(error => {
+            console.log(error);
+            res.json({
+                status: false,
+                error: error
+            });
+        });
     }
 };

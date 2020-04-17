@@ -8,6 +8,11 @@ module.exports = (sequelize , Sequelize)=>{
             autoIncrement : true,
             field : 'id'
         },
+        time: {
+          type: Sequelize.STRING,
+          allowNull: true,
+          field: 'time'
+        },
         authorId : {
             type : Sequelize.INTEGER(20),
             unique : false,

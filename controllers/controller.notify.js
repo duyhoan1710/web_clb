@@ -69,7 +69,7 @@ module.exports = {
         // userId , groupId , title , content
         let userId = req.user.id;
         let body = req.body;
-        notifyModel.create({authorId : userId , groupId : body.groupId, title : body.title , content : body.content}).then((notify)=>{
+        notifyModel.create({time: body.time, authorId : userId , groupId : body.groupId, title : body.title , content : body.content}).then((notify)=>{
             res.json({
                 status: true,
                 message : 'create notify success',
@@ -88,7 +88,7 @@ module.exports = {
         // userId , groupId ,notifyId, title , content
         let userId = req.user.id;
         let body = req.body;
-        notifyModel.update({title : body.title , content : body.content} , {where : {authorId : userId , id : body.notifyId}}).then((result)=>{
+        notifyModel.update({time: body.time, title : body.title , content : body.content} , {where : {authorId : userId , id : body.notifyId}}).then((result)=>{
             res.json({
                 status: true,
                 message : 'update notify success',
