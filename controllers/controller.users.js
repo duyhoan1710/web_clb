@@ -181,8 +181,8 @@ module.exports = {
         })
     },
     createMember : (req , res , next ) =>{
-        let body = req.body;
-        // username , password , email , phone , fullName
+        let body = res.body;
+        // username , password , email , phone , fullName, birthday
         bcrypt.hash(body.password , parseInt(config.bcrypt.saltRounds) , (err , hashPassword)=>{
             if(err) {
                 logger.error('hash password error : ' + err );

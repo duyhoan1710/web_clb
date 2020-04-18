@@ -1,6 +1,7 @@
 let logger = require('../logger/logger');
 let controllerUsers = require('../controllers/controller.users');
 let authorizeUser = require('../middleware/authorize/authorize');
+let validate = require('../validate/validateUser');
 module.exports = (app) =>{
     // user normal
     app.get('/api/user/profile' , controllerUsers.getMyProfile);
@@ -11,8 +12,7 @@ module.exports = (app) =>{
     app.get('/api/member/profile/:userId' , controllerUsers.getMember);
     //advance
     app.get('/api/member/unActive' , authorizeUser('createMember') , controllerUsers.getUnActiveMember);
-    app.post('/api/member' , authorizeUser('createMember') , controllerUsers.createMember);
-    app.post('/api/member' , authorizeUser('createMember') , controllerUsers.createMember);
+    app.post('/api/member' , validate.createUser , authorizeUser('createMember') , controllerUsers.createMember);
     app.put('/api/member' , authorizeUser('updateMember'), controllerUsers.updateMember);
     app.get('/api/member/listAdvance/:groupId' , authorizeUser('getListAdvanceProfileMember') , controllerUsers.getListMemberAdvance);
     app.get('/api/member/allAdvance' , authorizeUser('getAllAdvanceProfileMember') ,  controllerUsers.getAllMemberAdvance);

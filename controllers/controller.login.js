@@ -6,7 +6,7 @@ let {userGroupRoleModel , groupModel , roleModel , userModel , groupRoleModel} =
 module.exports = {
     post : (req , res , next ) =>{
         // username , password
-        let body = req.body;
+        let body = res.body;
         userModel.findOne({where : {username : body.username, status: true}}).then((user)=>{
             bcrypt.compare(body.password , user.password , (err , result)=>{
                 if(err) {

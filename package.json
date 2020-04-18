@@ -28,6 +28,8 @@
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "sequelize": "^5.21.5",
+    "validate.js": "^0.13.1",
+    "validatejs": "0.0.2",
     "winston": "^3.2.1",
     "xlsx": "^0.15.6"
   },
