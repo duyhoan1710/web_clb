@@ -1,6 +1,7 @@
 let logger = require('../logger/logger');
 let {groups , roles , permissions , groupRole} = require('./database');
 let {groupModel , roleModel , permissionModel , groupRoleModel , groupRolePermissionModel} = require('./index');
+
 let getGroupId = require('./lib/getGroupId');
 let getRoleId = require('./lib/getRoleId');
 let getPermissionId = require('./lib/getPermissionId');
@@ -78,18 +79,17 @@ let insertDataToGroupRolePermission = async ()=>{
 
 
 
-let run =async () =>{
-    await insertDataToGroups();
-    await insertDataToRoles();
-    await insertDataToPermissions();
-    await insertDataToGroupRole();
-    await insertDataToGroupRolePermission();
+let run = async () =>{
+    try{
+        await insertDataToGroups();
+        await insertDataToRoles();
+        await insertDataToPermissions();
+        await insertDataToGroupRole();
+        await insertDataToGroupRolePermission();
+    }catch(e){
+        logger.error('insert data error ' + e);
+    }
 };
-
-
-try{
-    run();
-}catch(e){
-    logger.error('insert data error ' + e);
-}
+console.log('aaa');
+run();
 
