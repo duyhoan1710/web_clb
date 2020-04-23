@@ -28,7 +28,7 @@ let config = {
 };
 
 
-console.log(config);
+// console.log(config);
 // let config = {
 //     database : 'kitClub',
 //     username : "root",

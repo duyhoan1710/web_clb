@@ -197,7 +197,10 @@ module.exports = {
                             for(let countOfLesson = 0 ; countOfLesson < listUser[i].dataJson[j].length; countOfLesson ++ ){
                                 arrayLesson.forEach(lesson => {
                                     if(listUser[i].dataJson[j][countOfLesson].lesson.indexOf(lesson) !== -1){
-                                        newObjectHasMeeting[j][lesson].push(listUser[i].fullName);
+                                        newObjectHasMeeting[j][lesson].push({
+                                            user: listUser[i].fullName ,
+                                            subject: listUser[i].dataJson[j][countOfLesson].subject
+                                        });
                                     }
                                 })
                             }

@@ -30,7 +30,7 @@ const constrains = {
     },
     phone: {
         presence: true,
-        type: 'number',
+        type: 'string',
         format: {
             pattern: /(09|01[2|6|8|9])+([0-9]{8})\b/g,
             message: function (value) {
