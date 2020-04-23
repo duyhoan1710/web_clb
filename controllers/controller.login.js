@@ -84,6 +84,11 @@ module.exports = {
                     }
                 }
             })
+        }).catch(error => {
+            res.json({
+                status: false,
+                message: 'user not found'
+            })
         })
     },
     logout : (req , res , next) => {
