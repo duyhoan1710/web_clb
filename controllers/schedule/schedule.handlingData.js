@@ -6,11 +6,13 @@ module.exports = (fileName)=>{
     const sheet_name_list = workbook.SheetNames;
     let data = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
     // let arrayClass = [];
+
     let objectData = {};
-    let regex_get_time = /Từ (.*) đến (.*):\s*(Thứ (.*) tiết (.*) tại (.*)\s*)+/gi;
+    let regex_get_time = /Từ (.*) đến (.*):\s*(Thứ (.*) tiết (.*)( tại (.*))?\s*)+/gi;
     for(let i = 8 ; i< data.length-5 ; i++){
-        let string = data[i]['__EMPTY_6'].toString();
-        let time_address = [...string.matchAll(regex_get_time)];
+        data[i]['__EMPTY_6'] = data[i]['__EMPTY_6'].replace(/Chủ nhật/g, 'Thứ 1');
+        let time_address = [...data[i]['__EMPTY_6'].matchAll(regex_get_time)];
+
         // arrayClass.push(data[i]['__EMPTY_4']);
         time_address.forEach(temp =>{
             // đổi ngày tháng sang giây
@@ -19,48 +21,30 @@ module.exports = (fileName)=>{
             let endTime = temp[2].split('/');
             let endMillisecond = new Date(endTime[2] + '/' + endTime[1] + '/' + endTime[0]).getTime();
 
-            for(let millisecond = startMillisecond ; millisecond <= endMillisecond ; millisecond += 60*60*24*1000){
+            for(let millisecond = startMillisecond ; millisecond <= endMillisecond ; millisecond += 60*60*24*1000) {
                 let getDay = (new Date(millisecond)).getDay();
-                if(temp[0].length > 85){   // nếu môn này học 2 buổi trở lên trong 1 tuần
-                    let regex_time = /(Thứ (.*) tiết (.*) tại (.*))/g;
-                    let match_time = [...temp[0].matchAll(regex_time)];
-                    match_time.forEach(time =>{
-                        if(parseInt(time[2]) === getDay + 1){
-                            let obj = {};
-                            obj[millisecond] = {
-                                'school': true,
-                                'subject' : data[i]['__EMPTY_4'],
-                                'address' : time[4],
-                                'lesson' : time[3]
-                            };
-                            if(objectData[millisecond]){
-                                objectData[millisecond].push(obj[millisecond]);
-                            }
-                            else{
-                                objectData[millisecond] = [];
-                                objectData[millisecond].push(obj[millisecond]);
-                            }
-                        }
-                    })
-                }
-                else{
-                    if(parseInt(temp[4]) === getDay + 1){
+                let regex_time = /(Thứ (.*) tiết ([\d,]*)( tại (.*))?)/g;
+
+                let match_time = [...temp[0].matchAll(regex_time)];
+                // console.log(match_time);
+                match_time.forEach(time => {
+                    // console.log(time);
+                    if (parseInt(time[2]) === getDay + 1) {
                         let obj = {};
                         obj[millisecond] = {
                             'school': true,
-                            'subject' : data[i]['__EMPTY_4'],
-                            'address' : temp[6],
-                            'lesson' : temp[5]
+                            'subject': data[i]['__EMPTY_4'],
+                            'address': time[5] || 'null',
+                            'lesson': time[3]
                         };
-                        if(objectData[millisecond]){
+                        if (objectData[millisecond]) {
                             objectData[millisecond].push(obj[millisecond]);
-                        }
-                        else{
+                        } else {
                             objectData[millisecond] = [];
                             objectData[millisecond].push(obj[millisecond]);
                         }
                     }
-                }
+                })
             }
         });
     }

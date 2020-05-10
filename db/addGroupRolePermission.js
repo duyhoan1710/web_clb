@@ -1,7 +1,7 @@
 let logger = require('../logger/logger');
+
 let {groups , roles , permissions , groupRole} = require('./database');
 let {userModel, groupModel , roleModel , permissionModel , groupRoleModel , groupRolePermissionModel} = require('./index');
-let config = require('../config/config');
 
 let getGroupId = require('./lib/getGroupId');
 let getRoleId = require('./lib/getRoleId');
@@ -90,6 +90,6 @@ let run = async () =>{
         logger.error('insert data error ' + e);
     }
 };
-console.log('aaa');
+
 run();
 
