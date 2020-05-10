@@ -3,6 +3,7 @@ let logger = require('../../logger/logger');
 let config = require('../../config/config');
 let {userModel} = require('../../db/index');
 let isAuth = async (req , res , next)=>{
+    console.log('auth');
     let accessToken = req.headers.authorization || req.headers["x-access-token"];
     if(accessToken){
         try{

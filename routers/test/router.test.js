@@ -1,10 +1,12 @@
 module.exports = (app)=>{
-    app.get('/api/test' , x(['1','2']) , y , z);
+    app.get('/api/test' , x , y , z);
 };
 
-let x = ( array )=>{
+let x = (req , res , next)=>{
+    let x = {};
     console.log(array);
-    return (req , res , next)=>{
+    console.log(x.a);
+    return ()=>{
         next();
     }
     // check quyền ở bước này

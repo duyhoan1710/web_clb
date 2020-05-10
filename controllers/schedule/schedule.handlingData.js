@@ -5,12 +5,13 @@ module.exports = (fileName)=>{
     const workbook = XLSX.readFile(path.resolve(`${__dirname}/files` ,`${fileName}.xls`));
     const sheet_name_list = workbook.SheetNames;
     let data = XLSX.utils.sheet_to_json(workbook.Sheets[sheet_name_list[0]]);
+    // let arrayClass = [];
     let objectData = {};
     let regex_get_time = /Từ (.*) đến (.*):\s*(Thứ (.*) tiết (.*) tại (.*)\s*)+/gi;
     for(let i = 8 ; i< data.length-5 ; i++){
         let string = data[i]['__EMPTY_6'].toString();
         let time_address = [...string.matchAll(regex_get_time)];
-
+        // arrayClass.push(data[i]['__EMPTY_4']);
         time_address.forEach(temp =>{
             // đổi ngày tháng sang giây
             let startTime = temp[1].split('/');
@@ -63,7 +64,7 @@ module.exports = (fileName)=>{
             }
         });
     }
-    return objectData;
+    return {objectData};
 };
 
 

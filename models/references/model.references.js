@@ -1,5 +1,5 @@
 module.exports = (db)=>{
-    const { userModel , groupModel , roleModel , groupRoleModel, userGroupRoleModel , groupRolePermissionModel , permissionModel , newsModel , imageModel , notifyModel } = db;
+    const { userModel , groupModel , roleModel , groupRoleModel, userGroupRoleModel , groupRolePermissionModel , permissionModel , newsModel , imageModel , notifyModel, projectModel, userProjectModel, taskModel} = db;
 
     // role associate  with group
     groupModel.belongsToMany(roleModel , {through : groupRoleModel , as : 'role' , foreignKey : 'groupId'});
@@ -40,4 +40,16 @@ module.exports = (db)=>{
     groupModel.belongsToMany(userModel , {through :{model : notifyModel , unique : false} ,as : 'user' , foreignKey : 'groupId' , unique : false});
     notifyModel.belongsTo(userModel , {foreignKey : 'authorId'});
     notifyModel.belongsTo(groupModel , {foreignKey : 'groupId'});
+
+    // user associate with project
+
+    userModel.belongsToMany(projectModel, {through: userProjectModel  , foreignKey: 'userId'});
+    projectModel.belongsToMany(userModel, {through: userProjectModel , foreignKey: 'projectId'});
+    userProjectModel.belongsTo(userModel, {foreignKey: 'userId'});
+    userProjectModel.belongsTo(projectModel, {foreignKey: 'projectId'});
+
+    // userProject associate task
+
+    userProjectModel.hasMany(taskModel, {foreignKey: 'userProjectId'});
+    taskModel.belongsTo(userProjectModel , {foreignKey: 'userProjectId'});
 };

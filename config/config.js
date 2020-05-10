@@ -1,5 +1,6 @@
 require('dotenv').config();
 
+// console.log(process.env);
 let config = {
     database : process.env.database_mysql,
     username : process.env.username_mysql,

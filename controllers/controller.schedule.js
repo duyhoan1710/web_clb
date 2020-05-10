@@ -5,6 +5,7 @@ let getCookies = require('./schedule/schedule.getCookie');
 let loginWithCookieAndGetElement = require('./schedule/schedule.loginWithCookieAndGetElement');
 let createFileXlS = require('./schedule/schedule.createFileXLS');
 let getDataJson = require('./schedule/schedule.handlingData');
+let updateDataJson = require('./schedule/schedule.updateDataJson');
 let sleep = ()=>{
     return new Promise((resolve)=>{
         setTimeout(resolve , 100);
@@ -89,7 +90,11 @@ module.exports = {
     },
     // guest
     post : async (req , res , next)=>{
+        let arrayGrade = ['AT14,CT2,DT1', 'AT15,CT3,DT2', 'AT16,CT4,DT3'];
         let studentAccount = req.body.studentAccount;
+        let branch = studentAccount[0] + studentAccount[1];
+        if(branch === 'AT') branch = branch + studentAccount[2] + studentAccount[3];
+        else branch = branch + studentAccount[3];
         let studentPassword = req.body.studentPassword;
         try{
             let viewState = await getViewState();
@@ -97,11 +102,18 @@ module.exports = {
             let elements = await loginWithCookieAndGetElement(cookies , viewState);
             await createFileXlS(cookies , elements , studentAccount);
             await sleep();
-            let dataJson = getDataJson(studentAccount);
+            let {objectData} = getDataJson(studentAccount);
+            // for(let i = 0 ; i< arrayGrade.length; i++){
+            //     if(arrayGrade[i].indexOf(branch) !== -1){
+            //         objectData = updateDataJson(objectData, arrayClass, arrayGrade[i]);
+            //     }
+            // }
+            // objectData = updateDataJson(objectData , arrayClass , '13-4');
+            // objectData = updateDataJson(objectData , arrayClass , '20-4');
             res.json({
                 status : true,
                 message : 'get dataJson schedule success',
-                dataJson : dataJson
+                dataJson : objectData
             })
         }catch (e) {
             console.log(e);
@@ -188,7 +200,6 @@ module.exports = {
             let month = new Date().getMonth();
             let year = new Date().getFullYear();
             let millisecond = new Date(year+ '/' + (month+ 1) + '/' + date).getTime();
-            console.log(millisecond);
             let arrayLesson = ["1,2,3","4,5,6","7,8,9","10,11,12","13,14,15,16"];
             for(let i = 0; i < listUser.length; i++){
                 if(listUser[i].dataJson){
