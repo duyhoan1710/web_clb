@@ -25,11 +25,12 @@ module.exports = (cookies , viewState)=>{
             let $ = cheerio.load(res);
             let elements = {};
             let options = $('option[selected="selected"]');
+            console.log(options);
             elements['__VIEWSTATE'] = viewState;
             elements['PageHeader1$drpNgonNgu'] = options[0].attribs.value;
             elements['drpSemester'] = options[1].attribs.value;
             elements['drpTerm'] = options[2].attribs.value;
-            elements['drpType'] = options[3].attribs.value;
+            // elements['drpType'] = options[3].attribs.value;
             elements['btnView'] = 'Xuất file Excel';
             let hiddenInputList = $('input[type="hidden"]');
             for (let i=0;i<hiddenInputList.length;i++){

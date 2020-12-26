@@ -103,6 +103,8 @@ module.exports = {
             await createFileXlS(cookies , elements , studentAccount);
             await sleep();
             let {objectData} = getDataJson(studentAccount);
+
+            // console.log(objectData);
             // for(let i = 0 ; i< arrayGrade.length; i++){
             //     if(arrayGrade[i].indexOf(branch) !== -1){
             //         objectData = updateDataJson(objectData, arrayClass, arrayGrade[i]);
