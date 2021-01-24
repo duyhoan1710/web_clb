@@ -24,8 +24,8 @@ let authenticate = require('./middleware/authenticate/isAuth');
 // });
 // require('./routers/test/router.test')(app);
 require('./routers/router.schedule')(app);
-require('./routers/router.login')(app);
-require('./routers/router.refreshToken')(app);
+// require('./routers/router.login')(app);
+// require('./routers/router.refreshToken')(app);
 
 // app.use(authenticate.isAuth);
 
@@ -36,9 +36,9 @@ require('./routers/router.refreshToken')(app);
 //     })
 // });
 
-require('./routers/router.users')(app);
-require('./routers/router.notify')(app);
-require('./routers/router.groupRole')(app);
+// require('./routers/router.users')(app);
+// require('./routers/router.notify')(app);
+// require('./routers/router.groupRole')(app);
 // app.use((err, req, res, next)=>{
 //     console.log('4');
 //     next(err);
