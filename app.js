@@ -52,6 +52,7 @@ require('./routers/router.schedule')(app);
 //     })
 // });
 
-app.listen(3001 ,'0.0.0.0',  ()=>{
-    logger.info('server is running in port 3001');
+let port = process.env.PORT || 5000;
+http.listen(port, function(){
+    console.log('listening on *:5000');
 });
