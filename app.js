@@ -50,6 +50,6 @@ require('./routers/router.schedule')(app);
 //     })
 // });
 
-app.listen(5000 , ()=>{
-    logger.info('server is running in port 3000');
+app.listen(3001 , ()=>{
+    logger.info('server is running in port 3001');
 });
