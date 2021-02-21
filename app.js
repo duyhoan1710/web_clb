@@ -13,7 +13,9 @@ app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
 app.use(morgan(':method :url :status ', {"stream": logger.stream}));
 // let authenticate = require('./middleware/authenticate/isAuth');
-
+app.get('/', (req, res) => {
+    res.send('server is running');
+})
 // app.use((req, res, next)=>{
 //     console.log('1');
 //     next();
