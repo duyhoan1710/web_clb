@@ -1,1 +1,1 @@
-web: node app.js --port 3001 --host 0.0.0.0 
+web: node app.js
