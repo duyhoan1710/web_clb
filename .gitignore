@@ -1,4 +1,4 @@
 .idea
 logger/logger.log
-controllers/schedule/xls
-node_modules
+/controllers/schedule/files
+/node_modules
