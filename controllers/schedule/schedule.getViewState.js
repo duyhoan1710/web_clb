@@ -8,7 +8,9 @@ module.exports = ()=>{
         request_promise(getOption).then((res)=>{
             let $ = cheerio.load(res);
             let viewState = $('#__VIEWSTATE').val();
-            resolve(viewState);
+            let eventValidation = $('#__EVENTVALIDATION').val();
+
+            resolve({viewState, eventValidation});
         }).catch((e)=>{
             reject(e);
         })

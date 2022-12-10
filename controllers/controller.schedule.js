@@ -97,9 +97,9 @@ module.exports = {
         else branch = branch + studentAccount[3];
         let studentPassword = req.body.studentPassword;
         try{
-            let viewState = await getViewState();
-            let cookies = await getCookies(viewState , studentAccount , studentPassword);
-            let elements = await loginWithCookieAndGetElement(cookies , viewState);
+            let {viewState, eventValidation} = await getViewState();
+            let cookies = await getCookies(viewState, eventValidation , studentAccount , studentPassword);
+            let elements = await loginWithCookieAndGetElement(cookies , viewState, eventValidation);
             await createFileXlS(cookies , elements , studentAccount);
             await sleep();
             let {objectData} = getDataJson(studentAccount);

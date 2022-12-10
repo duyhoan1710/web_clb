@@ -19,20 +19,22 @@ let loginWithCookie = (cookie)=>{
 };
 
 
-module.exports = (cookies , viewState)=>{
+module.exports = (cookies , viewState, eventValidation)=>{
     return new Promise((resolve, reject) => {
         request_promise(loginWithCookie(cookies)).then((res)=>{
             let $ = cheerio.load(res);
             let elements = {};
+
             let options = $('option[selected="selected"]');
-            console.log(options);
             elements['__VIEWSTATE'] = viewState;
-            elements['PageHeader1$drpNgonNgu'] = options[0].attribs.value;
-            elements['drpSemester'] = options[1].attribs.value;
-            elements['drpTerm'] = options[2].attribs.value;
+            elements['__EVENTVALIDATION'] = eventValidation;
+            // elements['PageHeader1$drpNgonNgu'] = options[0].attribs.value;
+            // elements['drpSemester'] = options[1].attribs.value;
+            // elements['drpTerm'] = options[2].attribs.value;
             // elements['drpType'] = options[3].attribs.value;
             elements['btnView'] = 'Xuất file Excel';
             let hiddenInputList = $('input[type="hidden"]');
+        
             for (let i=0;i<hiddenInputList.length;i++){
                 if (hiddenInputList[i].attribs.value == undefined){
                     elements[hiddenInputList[i].attribs.name] = '';
@@ -40,6 +42,7 @@ module.exports = (cookies , viewState)=>{
                     elements[hiddenInputList[i].attribs.name] = hiddenInputList[i].attribs.value;
                 }
             }
+
             resolve(elements);
         }).catch((e)=>{
             reject(e);

@@ -1,6 +1,6 @@
 let request_promise = require('request-promise');
 
-let postOption = (studentAccount , studentPassword ,viewState)=>{
+let postOption = (studentAccount , studentPassword ,viewState, eventValidation)=>{
     return {
         uri: 'http://qldt.actvn.edu.vn/CMCSoft.IU.Web.info/Login.aspx',
         method : 'POST',
@@ -19,6 +19,7 @@ let postOption = (studentAccount , studentPassword ,viewState)=>{
             'Accept-Language' : 'en-US,en;q=0.9,vi;q=0.8',
         },
         form : {
+            '__EVENTVALIDATION': eventValidation,
             '__VIEWSTATE' : viewState,
             'txtUserName' : studentAccount,
             'txtPassword' : studentPassword,
@@ -26,9 +27,9 @@ let postOption = (studentAccount , studentPassword ,viewState)=>{
         }
     }
 };
-module.exports = async (viewState , studentAccount , passwordAccount)=>{
+module.exports = async (viewState, eventValidation, studentAccount , passwordAccount)=>{
     return new Promise((resolve, reject) => {
-        request_promise(postOption( studentAccount , passwordAccount , viewState)).then((res)=>{
+        request_promise(postOption( studentAccount , passwordAccount , viewState, eventValidation)).then((res)=>{
             resolve(res.headers['set-cookie']);
         }).catch((e)=>{
             reject(e);
