@@ -28,7 +28,7 @@
     "perfect-logger": "^2.0.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
-    "sequelize": "^5.21.5",
+    "sequelize": "^6.29.0",
     "validate.js": "^0.13.1",
     "validatejs": "0.0.2",
     "winston": "^3.2.1",
